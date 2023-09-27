@@ -23,7 +23,7 @@ def sumArray(float []A, int n):
 | x^l=n-2^ | n-1 | (sum=sum(k=0,i-1,A[k]))=A[0]+A[1]+...+A[n-1] |
 |  x+1^l=n-1^| n-1 | A[0]+A[1]+...+A[n-1] |
 
-#2.
+# 2.
 ```
 float Puissance(float a, int n):
     float x <- 1.0
@@ -31,13 +31,13 @@ float Puissance(float a, int n):
         x <- x * a
     return x
 ```
-##2.1
+## 2.1
 post condition : x=a^n^
 ##2.2
 f(i)=n-1
 
 
-##2.4
+## 2.4
 ```
 ```py
 x=float(1)
@@ -48,7 +48,7 @@ for i in range(n) :
 print(x) 
 ```
 
-##2.4
+## 2.4
 complexité lineaire car juste un for et for est en O(n)
 
 |step| i | x |
@@ -59,4 +59,16 @@ complexité lineaire car juste un for et for est en O(n)
 |...|...|...|
 |k|n|a^i^=a^n^|
 
-#3
+# 3
+## 3.1
+renvoie x*y
+
+## 3.2
+
+- x est un entier
+- x > 0
+- x decroissant
+
+## 3.3
+
+x_i_`*`y_i_`*` = x_n_`*`y_n_ + prod

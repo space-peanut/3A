@@ -1,2 +1,3 @@
-import sys
-print(sys.executable)
+lst=[1]
+lst.append(1)
+print(lst)

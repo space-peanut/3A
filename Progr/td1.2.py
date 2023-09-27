@@ -30,9 +30,9 @@
 # values = [multiply(a,x) for x in range(max)]
 # plt.plot(labels, values)
 # plt.show()
-
 import time
 import matplotlib.pyplot as plt
+import random
 
 def Puissance(a, n):
     d=time.time()
@@ -48,10 +48,25 @@ def mult(a, n):
         x=x+a
     return time.time()-d
 
-max = 1000000
-a = 2
+def multSpeed(x, y):
+    list = []
+    for i in range(1,100):
+        d=time.time()   
+        prod=0
+        while x>0:
+            if x%2==1:
+                prod=prod+y
+            n=y+y
+            x=x//2
+        list.append(time.time()-d)
+    return sum(list)/len(list)
+
+max = 10000
+a = random.randint(1,100)
 labels = [x for x in range(max)]
-values = [Puissance(a,x) for x in range(max)]
-values2 = [mult(a,x) for x in range(max)]
-plt.plot(labels, values, values2)
+# values = [Puissance(a,x) for x in range(max)]
+# values2 = [mult(a,x) for x in range(max)]
+values = [multSpeed(a,x) for x in range(max)]
+plt.plot(labels, values)
 plt.show()
+
