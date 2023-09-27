@@ -13,9 +13,9 @@ device:start()
         device:setduty(j/1000)
         tmr.delayms(5)
     end
-    for j=1000,1,-1 do
+    for j=1000,1 do
         print(j)
-        device:setduty(j/1000)
+        device:setduty(1-j/1000)
         tmr.delayms(5)
     end
 device:stop()
