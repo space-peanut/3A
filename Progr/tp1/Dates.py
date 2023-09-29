@@ -54,6 +54,8 @@ import datetime
 dateInp = input("Enter birthdate (yyyy/mm/dd) : ").split("/")
 date = datetime.date(int(dateInp[0]),int(dateInp[1]),int(dateInp[2]))
 
+print("your birthdate is {}".format(date.strftime("%Y/%m/%d")))
+
 today = input("Enter today date (yyyy/mm/dd) : ").split("/")
 today = datetime.date(int(today[0]),int(today[1]),int(today[2]))
     
