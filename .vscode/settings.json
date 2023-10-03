@@ -1,3 +1,7 @@
 {
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "ocaml.sandbox": {
+        "kind": "custom",
+        "template": "$prog $args"
+    }
 }

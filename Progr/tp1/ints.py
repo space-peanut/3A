@@ -12,7 +12,7 @@ def factor(n) :
     return factors
 
 def revInt(a):
-    return str(a)[::-1]
+    return int(str(a)[::-1])
 
 def euclideBezout(a,b) :
     h=a

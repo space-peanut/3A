@@ -41,7 +41,7 @@ sum=i=0
 while True :
     if i==len(lst):
         break
-    sum+=int(lst[i])
+    sum+=lst[i]
     i+=1
 #do while not suited
 # print("Average is {}\n max is {} and min is {}\n The integer {} apears {} times".format(sum/len(lst),max(lst),min(lst),lst[0],lst.count(lst[0])))

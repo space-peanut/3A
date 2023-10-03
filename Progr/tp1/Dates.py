@@ -15,9 +15,9 @@ import datetime
     
 #     return year
 
-# year=enterYear()
 # day=enterDay()
 # month=enterMonth()
+# year=enterYear()
 
 # # check validity
 # if year<1900 or year > 2100 :
@@ -51,18 +51,23 @@ import datetime
 
 # ---------------------------------------------------------------------------------
 
-dateInp = input("Enter birthdate (yyyy/mm/dd) : ").split("/")
-date = datetime.date(int(dateInp[0]),int(dateInp[1]),int(dateInp[2]))
+dateInp = input("Enter birthdate (dd/mm/yyyy) : ").split("/")
+date = datetime.date(int(dateInp[2]),int(dateInp[1]),int(dateInp[0]))
 
+<<<<<<< HEAD
 print("your birthdate is {}".format(date.strftime("%Y/%m/%d")))
 
 today = input("Enter today date (yyyy/mm/dd) : ").split("/")
 today = datetime.date(int(today[0]),int(today[1]),int(today[2]))
+=======
+today = input("Enter today date (dd/mm/yyyy) : ").split("/")
+today = datetime.date(int(today[2]),int(today[1]),int(today[0]))
+>>>>>>> 59983d4 (ezrqe)
     
 if today!=datetime.date.today() :
     print("Today is not today")
     exit()
-print("tomorrow is {}".format((today+datetime.timedelta(days=1)).strftime("%Y/%m/%d")))
+print("tomorrow is {}".format((today+datetime.timedelta(days=1)).strftime("%d/%m/%Y")))
 print(today-date, "days since you were born")
 print("you are curently {} years old".format((today-date).days//365))
 
