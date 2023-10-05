@@ -26,6 +26,9 @@ def searchDicoRecursive(word, l=d):
 def searchDicoIt(word, l=d):
     return
 
+def searchStrInStr(container, contained):
+    return
+
 print(searchSeq("mot0",t))
 print(searchSeq("mot49",t))
 print(searchSeq("mot99",t))
