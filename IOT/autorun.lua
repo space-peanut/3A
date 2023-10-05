@@ -1,0 +1,6 @@
+print("CPU temp :")
+print(cpu.temperature())
+dofile("functions.lua")
+-- dofile("moveLed.lua")
+-- dofile("randTest.lua")
+dofile("encode.lua")

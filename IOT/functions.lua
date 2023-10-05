@@ -1,28 +1,21 @@
-pio.pin.setdir(pio.OUTPUT, pio.GPIO2)
-while true do
-    for i = 1, 3 do
-        pio.pin.setlow(pio.GPIO2)
-        tmr.delayms(500)
-        ledOff()
-        tmr.delayms(250)
-        
-    end
+pio.pin.setdir(pio.OUTPUT, pio.GPIO2);
+function ledon()
+    pio.pin.sethigh(pio.GPIO2)
+  end
+  
+  function ledoff()
+    pio.pin.setlow(pio.GPIO2)
+  end
 
-    for i = 1, 3 do
-        pio.pin.setlow(pio.GPIO2)
-        tmr.delayms(250)
-        ledOff()
-        tmr.delayms(250)
-        
+function wheelRGB(pos) -- pos entre 0 et 255 (angle entre O et 255)
+    pos = 255 - pos
+    if (pos < 85) then
+    return 255 - pos * 3, 0, pos * 3
+    elseif (pos < 170) then
+    pos = pos- 85
+    return 0, pos * 3, 255 - pos * 3 
+    else
+    pos = pos- 170
+    return pos * 3, 255 - pos * 3,0
     end
-
-    for i = 1, 3 do
-        pio.pin.setlow(pio.GPIO2)
-        tmr.delayms(500)
-        ledOff()
-        tmr.delayms(250)
-        
-    end
-    tmr.delayms(1000)
-
 end

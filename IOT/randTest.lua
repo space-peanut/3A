@@ -1,0 +1,1 @@
+lua_register(C,"esp_random",esp_random)
