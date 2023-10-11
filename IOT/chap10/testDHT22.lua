@@ -4,3 +4,5 @@ while true do
   print("temp: "..s:read("temperature")..", hum: "..s:read("humidity"))
   tmr.delayms(500)
 end
+
+-- test
