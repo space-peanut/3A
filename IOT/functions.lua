@@ -1,9 +1,10 @@
-pio.pin.setdir(pio.OUTPUT, pio.GPIO2);
 function ledon()
+    pio.pin.setdir(pio.OUTPUT, pio.GPIO2);
     pio.pin.sethigh(pio.GPIO2)
   end
   
   function ledoff()
+    pio.pin.setdir(pio.OUTPUT, pio.GPIO2);
     pio.pin.setlow(pio.GPIO2)
   end
 
@@ -19,3 +20,4 @@ function wheelRGB(pos) -- pos entre 0 et 255 (angle entre O et 255)
     return pos * 3, 255 - pos * 3,0
     end
 end
+
