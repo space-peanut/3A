@@ -39,7 +39,7 @@ def read_img(filename):
 
 #-------------------------------------------------
 # Convert a 3-dimensional array of integers to an image and write it
-# to a file.
+# to a file. 
 #
 # input:
 #   filename: the name of the file where the image should be written

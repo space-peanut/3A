@@ -1,5 +1,7 @@
+import random
 import ImagesUtils as img
 import numpy as np
+from PIL import Image  
 
 def transpose(array):
     if array.ndim != 2:
@@ -35,17 +37,48 @@ def rotate(path, dir):
         pixels=img.read_img(path)[::-1,::-1]
         img.write_img(path[:len(path)-4]+"_rotated-180.png",pixels)
     else:
-        print("Error: dir must be '+' or '-'")
+        print("Error: dir must be '+', '-', '0' or '180'")
         return
     img.display_img(pixels)
 
-def steno(string):
-    if len(string)==50:
-        return "string is too long"
+def stegano(string, iamgePath):
+    if len(string)>50:
+        print("string must be not more than 50 characters")
+        return 
     if not string.isalpha():
-        return "string must contain only letters"
+        print("string must be only letters (no space, no punctuation, no numbers nor special characters))")
+        return
+    
+    
     string=string.lower()
+    chars=[]
+    set=np.ndarray([0])
+    for c in string:
+        chars.append(ord(c))
+    pixels = img.read_img(iamgePath)
+    for i in range(len(chars)):
+        rand=random.randint(0,2)
+        if pixels[i][chars[i]-97][rand] == 0:
+            pixels[i][chars[i]-97][rand] +=1
+        else:
+            pixels[i][chars[i]-97][rand] -=1
+    img.write_img(iamgePath[:len(iamgePath)-4]+"_stegano.png",pixels)
 
-arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
-print(transpose(arr))
-print(arr.transpose())
+def destegano(iamgePath, refPath):
+    chars=[]
+    string=""
+    pixels = img.read_img(iamgePath)
+    pixelsRef= img.read_img(refPath)
+    diff=pixels-pixelsRef
+    for i in range(len(diff)):
+        for j in range(len(diff[0])):
+            if diff[i][j][2] != 0 or diff[i][j][1] != 0 or diff[i][j][0] != 0:
+                chars.append(chr(j+97))
+    for i in range(len(chars)):
+        string+=chars[i]
+    return string
+
+stegano("abcdefghij", "./progr/tp3/TUX.png")
+print(destegano("./progr/tp3/TUX_stegano.png", "./progr/tp3/TUX.png"))
+stegano("hello", "./progr/tp3/black.png")
+print(destegano("./progr/tp3/black_stegano.png", "./progr/tp3/black.png"))
