@@ -13,8 +13,8 @@
 -- changer les valeurs qui suivent en fonction de 
 -- vos branchements
 
-local sda = 4         -- GPIO pour I2C
-local scl = 15
+local sda = 18         -- GPIO pour I2C
+local scl = 19
 
 i2cadd = 0x3C   -- adresse ecran I2C
 
@@ -169,7 +169,11 @@ end
                                                             
 
 pcall( function()
-   cls()
-   console(">")
+  cls()
+  console(">")
+  gdisplay.setfont(gdisplay.FONT_TOONEY32)
+  gdisplay.write(0,16,"UwU")
+  tmr.delayms(100)
+  gdisplay.setfont(gdisplay.FONT_DEFAULT)
 end)
 
