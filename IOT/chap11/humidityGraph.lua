@@ -52,10 +52,12 @@ end
 
 t=thread.start(function ()
     while true do
-        len=len+1
-        h=s:read("humidity")
-        table.insert(hs,h)
-        drawGraph(hs, 5000)
+        try(function ()
+            len=len+1
+            h=s:read("humidity")
+            table.insert(hs,h)
+            drawGraph(hs, 5000)
+        end)
     end
 end
 )
