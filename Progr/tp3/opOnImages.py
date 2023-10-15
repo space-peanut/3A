@@ -1,5 +1,14 @@
 import ImagesUtils as img
+import numpy as np
 
+def transpose(array):
+    if array.ndim != 2:
+        return("Error: array must be 2D")
+    transposed = np.zeros(array.shape)
+    for i in range(len(array)):
+        for j in range(len(array[0])) :
+            transposed[j][i] = array[i][j]
+    return transposed
 def greyscale(path):
     pixels = img.read_img(path)
     for i in pixels:
@@ -9,8 +18,8 @@ def greyscale(path):
     img.write_img(path[:len(path)-4]+"_grey.png",pixels)
     img.display_img(pixels)
 
+# for code efficiency reasons, i will use numpy's transposed instead of mine
 def rotate(path, dir):
-    # rewrite transpose()
     pixels = img.read_img(path)
     print(pixels)
     if dir=="-":
@@ -30,4 +39,13 @@ def rotate(path, dir):
         return
     img.display_img(pixels)
 
-                
+def steno(string):
+    if len(string)==50:
+        return "string is too long"
+    if not string.isalpha():
+        return "string must contain only letters"
+    string=string.lower()
+
+arr = np.array([[1,2,3],[4,5,6],[7,8,9]])
+print(transpose(arr))
+print(arr.transpose())
