@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"name": "graphIsomorphism",
+			"path": "../../graphes/graphIsomorphism"
+		}
+	],
+	"settings": {
+		"ocaml.sandbox": {
+			"kind": "custom",
+			"template": "$prog $args"
+		}
+	}
+}

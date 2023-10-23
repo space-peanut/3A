@@ -175,5 +175,6 @@ pcall( function()
   gdisplay.write(0,16,"UwU")
   tmr.delayms(100)
   gdisplay.setfont(gdisplay.FONT_DEFAULT)
+  cls()
 end)
 
