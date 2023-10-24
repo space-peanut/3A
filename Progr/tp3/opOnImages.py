@@ -1,7 +1,6 @@
 import random
 import ImagesUtils as img
 import numpy as np
-from PIL import Image  
 
 def transpose(array):
     if array.ndim != 2:
@@ -11,6 +10,7 @@ def transpose(array):
         for j in range(len(array[0])) :
             transposed[j][i] = array[i][j]
     return transposed
+    
 def greyscale(path):
     pixels = img.read_img(path)
     for i in pixels:
@@ -77,8 +77,3 @@ def destegano(iamgePath, refPath):
     for i in range(len(chars)):
         string+=chars[i]
     return string
-
-stegano("abcdefghij", "./progr/tp3/TUX.png")
-print(destegano("./progr/tp3/TUX_stegano.png", "./progr/tp3/TUX.png"))
-stegano("hello", "./progr/tp3/black.png")
-print(destegano("./progr/tp3/black_stegano.png", "./progr/tp3/black.png"))
