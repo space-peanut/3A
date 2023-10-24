@@ -102,7 +102,7 @@ else print_string "not ok\n"
 ;;
 
 
-(*
+
 print_string "\n*************\n";;
 print_string " TEST : PERE\n";;
 print_string "*************\n";;
@@ -119,9 +119,9 @@ if ((pere p1 pop2) = ("Se","Mafo"))
 then print_string "ok\n"
 else print_string "not ok\n"
 ;;
-*)
 
-(*
+
+
 print_string "\n****************\n";;
 print_string " TEST : LIGNAGE \n";;
 print_string "****************\n";;
@@ -166,9 +166,18 @@ if ((lignage p2 pop2) = ["Se"; "Mafo"; "Ekwikwi"; "Zogo"; "Mboyen"])
 then print_string "ok\n"
 else print_string "not ok\n"
 ;;
-*)
 
-(*
+print_string "\n**************\n";;
+print_string " TEST : DERNIER \n";;
+print_string "**************\n";;
+
+print_string "Test1 : ";;
+let l = [1;2;3;4;5;6;7;8;9;0] in
+if ((dernier l) = 0)
+then print_string "ok\n"
+else print_string "not ok\n";;
+
+
 print_string "\n**************\n";;
 print_string " TEST : FRERE \n";;
 print_string "**************\n";;
@@ -195,9 +204,9 @@ if ((frere p1 p3 pop1) = false)
 then print_string "ok\n"
 else print_string "not ok\n"
 ;;
-*)
 
-(*
+
+
 print_string "\n**********************\n";;
 print_string " TEST : LISTE_LIGNAGES \n";;
 print_string "************************\n";;
@@ -220,7 +229,7 @@ if ((liste_lignages pop2) = [["Etogo"; "Se"; "Mafo"; "Ekwikwi"; "Zogo"; "Mboyen"
 then print_string "ok\n"
 else print_string "not ok\n"
 ;;
-*)
+
 
 (*
 print_string "\n***********************\n";;

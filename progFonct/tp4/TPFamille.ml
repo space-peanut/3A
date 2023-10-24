@@ -26,29 +26,46 @@ let rec a_un_pere personne population =
 
 
 let rec pere personne population =
+  match population with 
+  | [] -> failwith "La population ne contient pas de pere."
+  | hd::tl when fst (hd)=snd (personne) ->hd
+  | (_,_)::r -> pere personne r
 ;;
 
 
 (* Question 4 : Fonction "lignage" *)
 
-(*
-let lignage personne population = 
+let rec lignage_aux personne pop res = 
+  if (a_un_pere personne pop) then 
+
+    lignage_aux (pere personne pop) pop (List.append res [snd (personne)])
+  else 
+    List.append res [snd (personne)]
 ;;
-*)
+
+let lignage personne population = 
+  lignage_aux personne population [fst (personne)]
+;;
+
 
 (* Question 5 : Fonction "dernier" *)
 
-(*
+
 let dernier l =
+  if l=[] then failwith "La liste est vide."
+  else List.hd (List.rev l)
 ;;
-*)
+
 
 (* Question 6 : Prédicat "frere" *)
 
-(*
+
 let frere p1 p2 population = 
+  let l1 = lignage p1 population in
+  let l2 = lignage p2 population in
+  dernier l1 = dernier l2
 ;;
-*)
+
 
 (* Question 7 : Fonction "liste_lignages" *)
 
