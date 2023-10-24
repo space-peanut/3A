@@ -172,3 +172,13 @@ new_is_prime 33;;
 new_is_prime 37;;
 - : bool = true
 ```
+
+# 4
+
+```ocaml
+let rec binome p n = 
+    match p with
+    | 0 -> 1
+    | n -> 1
+    | _ -> binome p (n-1) + binome (p-1) (n-1);;
+```

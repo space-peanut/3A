@@ -41,10 +41,9 @@ def rotate(path, dir):
         return
     img.display_img(pixels)
 
-def stegano(string, iamgePath):
-    if len(string)>50:
-        print("string must be not more than 50 characters")
-        return 
+def steno(string):
+    if len(string)==50:
+        return "string is too long"
     if not string.isalpha():
         print("string must be only letters (no space, no punctuation, no numbers nor special characters))")
         return
