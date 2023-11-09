@@ -1,3 +1,7 @@
+import random
+import time
+import matplotlib.pyplot as plt
+import math
 #-------------------------------------------
 # Hash tables
 #-------------------------------------------
@@ -49,10 +53,10 @@ def annagram(word1,word2):
     return True
   return False
 
-print(annagram("bravo","abrov"))
-print(annagram("bravo","abrova"))
-print(annagram("bravo","abrof"))
-print(annagram("ac","bb"))
+# print(annagram("bravo","abrov"))
+# print(annagram("bravo","abrova"))
+# print(annagram("bravo","abrof"))
+# print(annagram("ac","bb"))
 
 #-------------------------------------------
 # From scratch
@@ -62,7 +66,10 @@ def creation(N):
   return [[] for i in range(N)]
 
 def ajout(T, cle, val):
-  T[H2(cle,len(T))].append((cle,val))
+  for i in range(len(T[H2(cle,len(T))])):
+    if T[H2(cle,len(T))][i][0]==cle:
+      T[H2(cle,len(T))][i][1]=val
+  T[H2(cle,len(T))].append([cle,val])
 
 def recherche(T,cle):
   hcle=H2(cle,len(T))
@@ -80,11 +87,66 @@ def rehash(T, N):
       ajout(T2, T[i][j][0], T[i][j][1])
   return T2
 
-t=creation(10)
-ajout(t,"chandail","sweater")
-ajout(t,"medecin","medic")
-ajout(t,"operation","operation")
-ajout(t,"offre","offer")
-print(t)
-t=rehash(t,20)
-print(t)
+
+# t=creation(10)
+# ajout(t,"chandail","sweater")
+# ajout(t,"medecin","medic")
+# ajout(t,"operation","operation")
+# ajout(t,"offre","offer")
+# ajout(t,"obstacle","obstacle")
+# ajout(t,"cigogne","stork")
+# print(t)
+# ajout(t,"cigogne","patate")
+# print(t)
+
+#-------------------------------------------
+# evaluation empirique
+#-------------------------------------------
+f = open('./Progr/tp4/liste.de.mots.francais.frgut.txt', 'r')
+dico = f.read().split("\n")
+
+# t=creation(100)
+# for i in range(10):
+#   ajout(t,dico[i],None)
+
+# print(t)
+
+# print(recherche(t,"abaissable"))
+
+# used to increase in log scale in a for loop
+def rangeLog(start, end):
+  while start <= end:
+    yield start
+    start += 10 ** int(math.log10(start))
+  
+times = []
+timesDict = []
+xs = []
+for N in rangeLog(10**2, 10**5):
+  xs.append(N)
+  sumTimes = 0
+  for k in range(100):
+    table=creation(N)
+    for i in range(math.floor(math.sqrt(N))):
+      ajout(table,dico[i],None)
+    t=time.time()
+    recherche(table,dico[random.randint(0,len(dico)-1)])
+    t=time.time()-t
+    sumTimes += t
+
+  times.append(sumTimes/100)
+
+    # dict={}
+    # for i in range(math.floor(math.sqrt(N))):
+    #   dict[dico[i]]=None
+    # t=time.time()
+    # dict[dico[rand]]
+    # t=time.time()-t
+    # timesDict.append(t)
+
+plt.plot(xs, times)
+# plt.plot(xs, timesDict)
+plt.xlabel('N')
+plt.ylabel('time')
+# plt.xscale("log")
+plt.show()
