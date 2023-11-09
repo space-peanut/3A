@@ -64,4 +64,42 @@ permet a un principal de prouver son identite a un autre
 
 - auth du msg
 
-## 
+## distrib de cle
+
+** objectif** :  distribuer des nouvelles cles aux principaux pour leurs coms futures
+
+**securite** : 
+confidentialite, integrite
+
+### possib 1 
+comunication directe de la cle
+
+### possib 2
+avec un kdc (key distrib center) 
+A -> kdc
+kdc -> A : k
+kdc -> B : k
+
+## certificat
+fichier qui certifie la cle pub d'une entite
+
+contenu :
+- pub k
+- info id entite
+- periode de validite
+- ...
+
+## failles
+
+un proto
+
+## trace d'exec et role general
+
+## intrus DY
+c'est l7intrus parfais, il capte tout, a une memoire infie, une forte puissance de calcul, memorisation infie, tres forte deduction
+
+# verification des protocoles (methode formelle (logique BAN))
+recup sur le cours parce que sur mon clavier j'ai pas
+
+
+
