@@ -10,11 +10,13 @@ end
 --draws the graph of humidity. when it reaches the end of the screen, 
 -- it clears the graph and starts again
 function drawGraph(t, refreshDelay)
+    t=63-((t[#t]*(-44))/100)
     if len ==1 then
+        -- gdisplay.putpixel({#t+3,63-((t[#t]*44)/100)})
         gdisplay.putpixel({#t+3,63-((t[#t]*44)/100)})
     else
-        gdisplay.line({#t+3-1,63-((t[#t-1]*(-44)/100))},{#t+3,63-((t[#t]*(-44))/100)})
-        print(63-((t[#t]*(-44))/100))
+        -- gdisplay.line({#t+3-1,63-((t[#t-1]*(-44)/100))},{#t+3,63-((t[#t]*(-44))/100)})
+        gdisplay.line({#t+3-1,63-((t[#t-1]*44)/100)},{#t+3,63-((t[#t]*44)/100)})
     end
     tmr.delayms(refreshDelay)
     if len==MAX_LENGTH then
