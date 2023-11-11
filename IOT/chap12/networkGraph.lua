@@ -12,10 +12,10 @@ end
 function drawGraph(t, refreshDelay)
     if len ==1 then
         -- gdisplay.putpixel({#t+3,63-((t[#t]*44)/100)})
-        gdisplay.putpixel({#t+3,63-((t[#t]*44)/100)})
+        gdisplay.putpixel({#t+3,63-((100-(t[#t]*44))/100)})
     else
         -- gdisplay.line({#t+3-1,63-((t[#t-1]*(-44)/100))},{#t+3,63-((t[#t]*(-44))/100)})
-        gdisplay.line({#t+3-1,63-((t[#t-1]*44)/100)},{#t+3,63-((t[#t]*44)/100)})
+        gdisplay.line({#t+3-1,63-((100-(t[#t-1]*44))/100)},{#t+3,63-((100-(t[#t]*44))/100)})
 
     end
     tmr.delayms(refreshDelay)
