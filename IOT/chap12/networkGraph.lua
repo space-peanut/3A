@@ -17,6 +17,7 @@ function drawGraph(t, refreshDelay)
     else
         -- gdisplay.line({#t+3-1,63-((t[#t-1]*(-44)/100))},{#t+3,63-((t[#t]*(-44))/100)})
         gdisplay.line({#t+3-1,63-((t[#t-1]*44)/100)},{#t+3,63-((t[#t]*44)/100)})
+
     end
     tmr.delayms(refreshDelay)
     if len==MAX_LENGTH then
