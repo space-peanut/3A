@@ -118,13 +118,16 @@ def rangeLog(start, end):
   while start <= end:
     yield start
     start += 10 ** int(math.log10(start))
-  
+
+
 times = []
 timesDict = []
 xs = []
 for N in rangeLog(10**2, 10**5):
   xs.append(N)
   sumTimes = 0
+  sumTimes2 = 0
+  print(N)
   for k in range(100):
     table=creation(N)
     for i in range(math.floor(math.sqrt(N))):
@@ -136,17 +139,42 @@ for N in rangeLog(10**2, 10**5):
 
   times.append(sumTimes/100)
 
-    # dict={}
-    # for i in range(math.floor(math.sqrt(N))):
-    #   dict[dico[i]]=None
-    # t=time.time()
-    # dict[dico[rand]]
-    # t=time.time()-t
-    # timesDict.append(t)
+  
+  
+  for k in range(100):
+    dict={}
+    for i in range(math.floor(math.sqrt(N))):
+      dict[dico[i]]=None
+    t=time.time()
+    dict[dico[random.randint(0,math.floor(math.sqrt(N)-1))]]
+    t=time.time()-t
+    sumTimes2 += t
+
+  timesDict.append(sumTimes2/100)
 
 plt.plot(xs, times)
-# plt.plot(xs, timesDict)
+plt.plot(xs, timesDict)
+plt.legend(["from scratch", "python dict"])
 plt.xlabel('N')
 plt.ylabel('time')
-# plt.xscale("log")
+plt.xscale("log")
 plt.show()
+
+"""
+4.1 anniversaires et collisions
+P(au moins une collision) = 1 - P(pas de collision)
+P(pass de collision) = Π(i=o -> n+1)((365-i)/365)
+"""
+
+def anniv(n):
+  return 1 - math.prod([(365-i)/365 for i in range(n+1)])
+
+print(anniv(23))
+
+# il est possible de representer les anniversaires comme une table de hachage {date,[personne1,personne2,...]}
+
+def pCollision(dictSize, entryNumber):
+  return 1 - math.prod([(dictSize-i)/dictSize for i in range(entryNumber+1)])
+
+print(pCollision(365, 23))
+print(pCollision(875, 40))
