@@ -1,7 +1,7 @@
 --writes humidity and temperature (in K) in the top yellow lines
 function writeData(refreshDelay)
     gdisplay.rect( {0,0}, 128, 16, gdisplay.BLACK, gdisplay.BLACK )
-    gdisplay.write({0,0}, w[0].rssi.."dBm".." in "..w[0].ssid)
+    gdisplay.write({0,0}, n[0].rssi.."dBm".." in "..n[0].ssid)
     tmr.delayms(refreshDelay)
 end
 
@@ -42,10 +42,10 @@ gdisplay.putpixel({126,60})
 t=thread.start(function ()
     while true do
         try(function ()
-            w=net.wf.scan(true)
+            n=net.wf.scan(true)
             writeData(0)
             len=len+1
-            dB=-w[0].rssi
+            dB=-n[0].rssi
             table.insert(dBs,dB)
             drawGraph(dBs, 800)
         end)

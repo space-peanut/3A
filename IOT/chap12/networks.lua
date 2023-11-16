@@ -1,8 +1,8 @@
-w=net.wf.scan(true)
+n=net.wf.scan(true)
 flip();flip();flip()
-for i=0,#w-1 do
+for i=0,#n-1 do
     -- 0 is for open networks
-    if w[i].auth==0 then
-        console(i..":"..w[i].ssid.." "..w[i].auth.."")
+    if n[i].auth==0 then
+        console(i..":"..n[i].ssid.." "..n[i].auth.."")
     end
 end
