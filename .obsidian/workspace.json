@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "e5addfd4202eefb2",
+        "id": "b3f9bb1c2cbc41c3",
         "type": "tabs",
         "children": [
           {
-            "id": "e3c7bc121d90bd92",
+            "id": "735f03123f4f7203",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "protoCrypto/tdpastp1/exo2.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -85,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "protoCrypto/tdpastp1/exo2.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "protoCrypto/tdpastp1/exo2.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "protoCrypto/tdpastp1/exo2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,8 +138,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e3c7bc121d90bd92",
+  "active": "735f03123f4f7203",
   "lastOpenFiles": [
+    "protoCrypto/tdpastp1/exo2.md",
     "protoCrypto/tdpastp1/MaximeSoulie.pdf",
     "protoCrypto/tdpastp1/fichier.txt",
     "protoCrypto/tdpastp1/fichier_hash.txt",
@@ -155,7 +148,6 @@
     "protoCrypto/td pas tp 1/exo2.md.md",
     "protoCrypto/tdpastp1/maxime.lefranc",
     "protoCrypto/tdpastp1/exo2.py",
-    "protoCrypto/tdpastp1/exo2.md",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/tdpastp1",
     "protoCrypto/td pas tp 1/maxime.lefranc",
@@ -167,7 +159,6 @@
     "UselessMangetesmortsLanguage/td2/2.md.md",
     "UselessMangetesmortsLanguage/td2/1.md.md",
     "protoCrypto/td1/tdd.md",
-    "protoCrypto/td2",
     "protoCrypto/cm.md",
     "protoCrypto/brouillon.md"
   ]
