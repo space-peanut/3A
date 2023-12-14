@@ -1,3 +1,4 @@
 print("CPU temp :")
 print(cpu.temperature())
-dofile("console.lua")
+dofile("dadidou1.lua")
+

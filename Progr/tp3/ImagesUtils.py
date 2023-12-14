@@ -107,3 +107,15 @@ def get_height(pixels):
 def display_img(pixels):
     plt.imshow(pixels)
     plt.show()
+
+
+px=read_img("/media/ssd2/cours/inge/3A/IOT/projet/dadidou.png")
+def read_img(filename):
+    pixels = plt.imread(filename)
+    list=pixels.tolist()
+    white_pixels = np.argwhere(np.all(pixels != [0, 0, 0], axis=-1))
+    np.savetxt('/media/ssd2/cours/inge/3A/IOT/projet/d', white_pixels, fmt='%d')
+    return pixels
+
+px = read_img("/media/ssd2/cours/inge/3A/IOT/projet/dadidou.png")
+
