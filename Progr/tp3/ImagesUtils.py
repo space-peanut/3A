@@ -15,7 +15,7 @@ import matplotlib.pyplot as plt # used to display a matrix as an image
 #-------------------------------------------------
 # Read an image from a file and return a 3-dimensional array of
 # unsigned integers.
-#
+#Vue d'ensemble - Revenus
 # input:
 #   filename: the name of the image file to be read
 #

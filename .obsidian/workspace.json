@@ -11,12 +11,8 @@
             "id": "735f03123f4f7203",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OS/Memento Widows.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -114,7 +110,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "OS/Memento Widows.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -131,7 +126,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Progr/l'autreCoursLa.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,9 +147,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Progr/l'autreCoursLa.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -177,8 +169,28 @@
   },
   "active": "fed072cb064752a3",
   "lastOpenFiles": [
-    "OS/Memento Widows.pdf",
-    "OS/Memento Widows.md",
+    "Progr/l'autreCoursla/test.cs",
+    "Progr/l'autreCoursLa.md",
+    "Progr/l'autreCoursla/l'autreCoursLa.md",
+    "Progr/l'autreCoursla",
+    "IS/deroulement.md",
+    "IS/C4SE_Demarche IBIS_Module 2_Ingenierie des Besoins_Ed2022_Version Diffusable.pdf",
+    "english/MA.md",
+    "protoCrypto/tdpastp1/exo2.md",
+    "protoCrypto/tdpastp1/MaximeSoulie.pdf",
+    "protoCrypto/tdpastp1/fichier.txt",
+    "protoCrypto/tdpastp1/fichier_hash.txt",
+    "protoCrypto/tdpastp1/maxime.hash",
+    "protoCrypto/td pas tp 1/exo2.md.md",
+    "protoCrypto/tdpastp1/maxime.lefranc",
+    "protoCrypto/tdpastp1/exo2.py",
+    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/tdpastp1",
+    "protoCrypto/td pas tp 1/maxime.lefranc",
+    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/td2/td2.md.md",
+    "protoCrypto/Untitled.md",
+    "UselessMangetesmortsLanguage/td2/2.md.md",
     "UselessMangetesmortsLanguage/td2/1.md.md",
     "protoCrypto/td1/tdd.md",
     "protoCrypto/cm.md",
