@@ -1,21 +1,24 @@
+import math
 import random
-
-#ng=nb generations
-#l=longueur de la phrase
-#lc=longueur d'un chromosome
-#n= taille de la population
-#ts=taux de selection
-#tm=taux de mutation
+import Levenshtein
 
 def generateMP(l):
-    """generate random mystery phrase of size size"""  
+    """
+    input : l, the size of the phrase
+    output : a string of size l
+    generate random mystery phrase of size l
+    """  
     phrase = ""
     for i in range(l):
         phrase += chr(random.randint(0, 255))
     return phrase
 
 def generateChromosomes(lc,n):
-    """generate n random chromosomes of size lc
+    """
+    input : lc, the size of a chromosome
+            n, the number of chromosomes
+    output : a list of n chromosomes
+    generate n random chromosomes of size lc
     index 0 is the chromosome itself, index 1 is the fitness
     """
     chromosomes = []
@@ -26,61 +29,103 @@ def generateChromosomes(lc,n):
         chromosomes.append(chromosome)
     return chromosomes
 
-def correctness(c, index, phrase):
-    """return -1 if cher c is present but not well placed, 1 if well placed or 0 if not correct"""
-    if c == phrase[index]:
-        return 1
-    elif c in phrase:
-        return 0
-    else:
-        return -1
     
-def fitness(chrom,phrase):
-    """return the fitness of the chromosome C"""
+def fitness1(chrom, phrase):
+    """
+    input : chrom, a chromosome
+            phrase, the mystery phrase
+    output : the fitness of the chromosome
+    Return the fitness of the chromosome chrom using -Σ(|C[i]-PM[i]|), i=1..L"""
     fitness = 0
     for i in range(len(chrom[0])):
-        fitness += correctness(chrom[0][i],i,phrase)
+        fitness -= abs(ord(chrom[0][i]) - ord(phrase[i]))
     chrom[1] = fitness
 
+def fitness2(chrom, phrase, alpha):
+    """
+    input : chrom, a chromosome
+            phrase, the mystery phrase
+    output : the fitness of the chromosome
+    Return the fitness of the chromosome chrom using  #match+alpha.#Missed_placed"""
+    fitness = 0
+    match_count = 0
+    misplaced_count = 0
+
+    for i in range(len(chrom[0])):
+        if chrom[0][i] == phrase[i]:
+            match_count += 1
+        elif chrom[0][i] in phrase:
+            misplaced_count += 1
+
+    fitness= match_count + alpha * misplaced_count
+    chrom[1] = fitness
+
+def fitness3(chrom, phrase):
+    """
+    input : chrom, a chromosome
+            phrase, the mystery phrase
+    output : the fitness of the chromosome
+    Return the fitness of the chromosome chrom using  -LevenshteinDistance(C,PM)"""
+    chrom[1]=-Levenshtein.distance(chrom[0], phrase)
+
+def fitness(chrom, phrase, type, alpha=0.5):
+    match type:
+        case 1:
+            fitness1(chrom, phrase)
+        case 2:
+            fitness2(chrom, phrase, alpha)
+        case 3:
+            fitness3(chrom, phrase)
+
 def sortByFitness(chromosomes):
-    """sort chromosomes by fitness"""
+    """
+    input : chromosomes, a list of chromosomes
+    output : the list of chromosomes sorted by fitness
+    sort chromosomes by fitness
+    """
+
+    chromosomes.sort(key=lambda x: x[1])
+
     chromosomes.sort(key=lambda x: x[1], reverse=True)
+    return chromosomes
 
 def select(chromosomes,ts):
-    """select the best chromosomes to reproduce"""
-    n = int(len(chromosomes)*ts)
+    """
+    input : chromosomes, a list of chromosomes
+            ts, the selection rate
+    output : the list of chromosomes selected
+    select the best chromosomes to reproduce"""
+    chromosomes = sortByFitness(chromosomes)
+    n = math.floor(len(chromosomes)*ts)
     return chromosomes[:n]
 
-def reproduct(chromosomes,target,tm):
-    """reproduct the selected chromosomes, with a mutation rate of tm"""
-    initSize = len(chromosomes)
+def reproduct(chromosomes,ts,tm):
+    """
+    input : chromosomes, a list of chromosomes
+            ts, the selection rate
+            tm, the mutation rate
+    output : the list of chromosomes reproduced
+    select the best chromosomes to reproduct,
+    reproduct the selected chromosomes, with a mutation rate of tm,
+    can be parthenogenesis,
+    also mutates some chromosomes
+    """
+    initPopSize = len(chromosomes)
+    chromosomes = select(chromosomes,ts)
+    print("best chromosome : {}".format(chromosomes[0]))
+    newChromosomes = []
 
-    while len(chromosomes) < len(target):
-        parent1 = chromosomes[random.randint(0,initSize-1)]
-        parent2 = chromosomes[random.randint(0,initSize-1)]
-        while parent1!=parent2:
-            parent2 = chromosomes[random.randint(0,initSize-1)]
+    while len(newChromosomes)+len(chromosomes) < initPopSize:
+        choose1 = random.randint(0,len(chromosomes)-1)
+        choose2 = random.randint(0,len(chromosomes)-1)
+        parent1 = chromosomes[choose1]
+        parent2 = chromosomes[choose2]
+        cut = random.randint(len(parent1[0])//3,2*(len(parent1[0])//3))
+        child = [parent1[0][:cut] + parent2[0][cut:],0]
+        if random.random() < tm:
+            mutation = random.randint(0, len(child[0])-1)
+            child[0] = child[0][:mutation] + chr(random.randint(0, 255)) + child[0][mutation+1:]
+        newChromosomes.append(child)
 
-        child = ["",0]
-        part1=parent1[0][:len(parent1[0])//2]
-        part2=parent2[0][len(parent2[0])//2:]
-        child[0]=part1+part2
-
-
-
-        chromosomes.append(child)
-
-    num_mutations = int(initSize * tm)
-
-    for _ in range(num_mutations):
-        index = random.randint(0, initSize-1)
-        chromosome = chromosomes[index]
-
-        chromosome[0] = chromosome[0][] + new_gene + chromosome[0][gene_index+1:]
-    
-    return chromosomes
-def mutate(chromosomes, tm, l):
-    """mutate selected chromosomes with a mutation rate of tm"""
-    n = len(chromosomes)
-
+    chromosomes+=newChromosomes
     return chromosomes

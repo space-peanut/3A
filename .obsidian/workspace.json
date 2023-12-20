@@ -11,40 +11,31 @@
             "id": "735f03123f4f7203",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "Progr/projet/Compte Rendu.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
       },
       {
-        "id": "ef21f07feb241e44",
+        "id": "7154fa23d688b686",
         "type": "tabs",
         "children": [
           {
-            "id": "e491267be55d1f3d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OS/Memento Widows.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a85fc20239ae88a1",
+            "id": "c4e699dfd821e58e",
             "type": "leaf",
             "state": {
               "type": "pdf",
               "state": {
-                "file": "OS/Memento Widows.pdf"
+                "file": "Progr/projet/Projet-AG-UMM-2x2.pdf"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -110,6 +101,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Progr/projet/Projet-AG-UMM-2x2.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,6 +118,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Progr/projet/Projet-AG-UMM-2x2.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -147,7 +140,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "Progr/projet/Projet-AG-UMM-2x2.pdf"
+              }
             }
           }
         ]
@@ -167,8 +162,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fed072cb064752a3",
+  "active": "c4e699dfd821e58e",
   "lastOpenFiles": [
+    "Progr/projet/Compte Rendu.md",
+    "Progr/projet/Projet-AG-UMM-2x2.pdf",
     "Progr/l'autreCoursla/test.cs",
     "Progr/l'autreCoursLa.md",
     "Progr/l'autreCoursla/l'autreCoursLa.md",
@@ -185,8 +182,6 @@
     "protoCrypto/tdpastp1/maxime.lefranc",
     "protoCrypto/tdpastp1/exo2.py",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/tdpastp1",
-    "protoCrypto/td pas tp 1/maxime.lefranc",
     "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/td2/td2.md.md",
     "protoCrypto/Untitled.md",
