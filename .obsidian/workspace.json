@@ -8,12 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5ec0b417713d7e99",
+            "id": "735f03123f4f7203",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bed9802d636e170e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "english/MA.md",
+                "file": "DGSI.md",
                 "mode": "source",
                 "source": false
               }
@@ -178,6 +186,10 @@
     "IS/deroulement.md",
     "english/MA.md",
     "protoCrypto/td pas tp 1/exo2.md.md",
+    "protoCrypto/tdpastp1/maxime.lefranc",
+    "protoCrypto/tdpastp1/exo2.py",
+    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/tdpastp1",
     "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/Untitled.md",
     "UselessMangetesmortsLanguage/td2/2.md.md",

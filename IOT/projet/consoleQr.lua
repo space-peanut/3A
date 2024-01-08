@@ -62,7 +62,7 @@ end
 
 pcall( function()
         cls()
-        gdisplay.qrcode(10,16,"https://anything-roll-755ffec66072.herokuapp.com/led.mp4",3)
+        gdisplay.qrcode(10,16,"https://anything-roll-755ffec66072.herokuapp.com/iot.html",3)
         gdisplay.qrcode(75,16,"https://onlinealarmkur.com/world/fr/                    ",3)
 
 end)

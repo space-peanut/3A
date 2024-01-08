@@ -1,3 +1,64 @@
+sda=18
+scl=19
+
+i2cadd=0x3C
+local reset16=false
+i2c.setpins(0,sda,scl)
+
+if reset16 then
+    pio.pin.setdir(pio.OUTPUT, pio.GPIO16)
+    pio.pin.setlow(pio.GPIO16)
+    tmr.delayms(50)
+    pio.pin.sethigh(pio.GPIO16)
+    tmr.delayms(50)
+end
+
+pcall( function() -- pas d'erreur
+    gdisplay.attach(gdisplay.SSD1306_128_32, gdisplay.LANDSCAPE, false, i2cadd)
+    gdisplay.clear()
+    gdisplay.setfont(gdisplay.FONT_LCD)
+    gdisplay.setwrap(false)
+end)
+
+local consolepos = 0
+local consoletab = {}
+local consolemax = 6
+
+local oledflip = 1
+
+function cls() 
+    if (consolemax==6) then gdisplay.clear()
+    else 
+        gdisplay.rect( {0,0}, 128, 9*consolemax, {0,0,0}, {0,0,0} )
+    end
+    if oledflip ~= 1 then gdisplay.clear() end
+    consolepos = 0
+    consoletab={}
+    for i=0, consolemax do
+         consoletab[i] = ""
+    end
+end
+
+function changeImat(plaque)
+    -- 9 char max, preferer un format style XX-123-XX
+    cls()
+    gdisplay.rect( {30,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    gdisplay.rect( {60,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    gdisplay.rect( {90,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    cls()
+    gdisplay.rect( {30,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    gdisplay.rect( {60,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    gdisplay.rect( {90,15}, 5,5, gdisplay.WHITE, gdisplay.WHITE )
+    tmr.delayms(500)
+    cls()
+    gdisplay.write(10,15,plaque)
+  end
+
 function wheelRGB(pos) -- pos entre 0 et 255 (angle entre O et 255)
     pos = 255 - pos
     if (pos < 85) then
@@ -55,3 +116,7 @@ function fete()
 end
 
 th=thread.start(fete)
+th2=thread.start(
+    gdisplay.setfont(gdisplay.FONT_DEJAVU18),
+    changeImat("EY-972-LA")
+)
