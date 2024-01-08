@@ -4,32 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "b3f9bb1c2cbc41c3",
+        "id": "f215adce02211519",
         "type": "tabs",
         "children": [
           {
-            "id": "735f03123f4f7203",
+            "id": "5ec0b417713d7e99",
             "type": "leaf",
             "state": {
-              "type": "pdf",
+              "type": "markdown",
               "state": {
-                "file": "Progr/projet/Compte Rendu.pdf"
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "cb2b20baa3cb7b02",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "152e90caee6248ea",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Progr/projet/Projet-AG-UMM-2x2.pdf"
+                "file": "english/MA.md",
+                "mode": "source",
+                "source": false
               }
             }
           }
@@ -99,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Progr/projet/Compte Rendu.pdf",
+                "file": "english/MA.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Progr/projet/Compte Rendu.pdf",
+                "file": "english/MA.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Progr/projet/Compte Rendu.pdf"
+                "file": "english/MA.md"
               }
             }
           }
@@ -147,7 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,32 +145,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "735f03123f4f7203",
+  "active": "5ec0b417713d7e99",
   "lastOpenFiles": [
+    "english/MA/Ma Coalition.kdenlive.zerUKc",
+    "english/MA/magoyond.jpg",
+    "english/MA/background-main6.png",
+    "english/MA/background-main6.webp",
+    "english/MA/background-main6.jpg",
+    "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
+    "english/MA/Ma Coalition.kdenlive.ZMCOJh",
+    "english/MA/Ma Coalition.kdenlive.yJRfLq",
+    "english/MA/Ma Coalition.kdenlive.EWizwt",
+    "english/MA/Ma Coalition_backup0.kdenlive",
+    "english/MA/NECROPOLIS.jpg.QviUqT",
+    "english/MA/qt_temp.AIwQKu",
+    "english/MA/KRIPTSHOW.png.KYmsre",
+    "english/MA/qt_temp.ODgpCj",
+    "english/MA/thanks.png.GFZJsr",
+    "english/MA/thanks.png~",
+    "english/MA/thanks.png",
+    "english/MA/magnificent_Anglais_Ma_makes_the_life.jpg",
+    "english/MA/NECROPOLIS.jpg",
+    "english/MA/KRIPTSHOW.png",
+    "english/MA/KRIPTSHOW.webp",
     "Progr/projet/Compte Rendu.md",
     "OS/Memento Widows.md",
-    "OS/Memento Widows.pdf",
     "protoCrypto/td2/td2.md.md",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/tdpastp1/exo2.md",
-    "protoCrypto/tdpastp1/MaximeSoulie.pdf",
-    "progFonct/tp1d.pdf",
-    "Progr/td-Algo_AnalyseProofComplx.pdf",
-    "Progr/projet/Compte Rendu.pdf",
-    "Progr/projet/ts1.png",
-    "Progr/projet/ts2.png",
-    "Progr/projet/tm2.png",
-    "Progr/projet/tm1.png",
-    "Progr/projet/Projet-AG-UMM-2x2.pdf",
-    "Progr/projet/n2.png",
-    "Progr/projet/n1.png",
-    "Progr/projet/n1.png.VixBev",
-    "Progr/projet/n1.png~",
-    "Progr/projet/qt_temp.IhIWVR",
-    "Progr/projet/n2.png.PciHZN",
-    "Progr/projet/l3.png",
-    "Progr/projet/l2.png",
-    "Progr/projet/l1.png",
     "Progr/l'autreCoursLa.md",
     "Progr/l'autreCoursla/l'autreCoursLa.md",
     "IS/deroulement.md",

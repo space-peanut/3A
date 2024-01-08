@@ -2,7 +2,7 @@ marilin monroe/manson
 margaret thatcher
 MLK
 Margot robie
-Mark Wahlberg
+S
 malcomX
 marie curie
 makima
@@ -23,9 +23,9 @@ massachussetians
 mathematicians
 madeilene ross
 max planck
+maxwell
 martians
 blue marlins
-marylanders
 magoyond
 
 if we get elected, we will change the national anthem. The choice of the national anthem will be yours :  either Le Magasin des suicides or Le manoir de Zack Trash, both by magoyond.(what a great band)
