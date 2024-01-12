@@ -8,20 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "735f03123f4f7203",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "bed9802d636e170e",
+            "id": "8f48c97788c6b439",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "DGSI.md",
+                "file": "cpp/TD1/Compte rendu TD 1 C++.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "english/MA.md",
+                "file": "cpp/TD1/Compte rendu TD 1 C++.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "english/MA.md",
+                "file": "cpp/TD1/Compte rendu TD 1 C++.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "english/MA.md"
+                "file": "cpp/TD1/Compte rendu TD 1 C++.md"
               }
             }
           }
@@ -153,29 +145,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ec0b417713d7e99",
+  "active": "8f48c97788c6b439",
   "lastOpenFiles": [
-    "english/MA/Ma Coalition.kdenlive.zerUKc",
+    "cpp/TD2/1",
+    "cpp/TD2/build/Debug/outDebug",
+    "cpp/TD2/build/Debug/1.o",
+    "cpp/TD2/build/Debug",
+    "cpp/TD2/build",
+    "cpp/TD2/output/1",
+    "cpp/TD2/output",
+    "cpp/TD2/1.cpp",
+    "cpp/TD1/Compte rendu TD 1 C++.pdf",
+    "Pasted image 20240110174606.png",
+    "DGSI.md",
+    "cpp/TD1/Compte rendu TD 1 C++.md",
+    "cpp/TD1/output/5",
+    "cpp/TD1/5.cpp",
+    "cpp/CM/CM2 part 2.md",
+    "cpp/CM/CM2.md",
+    "cpp/CM/CM2 exo1.md",
+    "tourcoing/Untitled.md",
+    "english/gerund vs inf.md",
     "english/MA/magoyond.jpg",
     "english/MA/background-main6.png",
     "english/MA/background-main6.webp",
     "english/MA/background-main6.jpg",
     "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
-    "english/MA/Ma Coalition.kdenlive.ZMCOJh",
-    "english/MA/Ma Coalition.kdenlive.yJRfLq",
-    "english/MA/Ma Coalition.kdenlive.EWizwt",
-    "english/MA/Ma Coalition_backup0.kdenlive",
-    "english/MA/NECROPOLIS.jpg.QviUqT",
-    "english/MA/qt_temp.AIwQKu",
-    "english/MA/KRIPTSHOW.png.KYmsre",
-    "english/MA/qt_temp.ODgpCj",
-    "english/MA/thanks.png.GFZJsr",
-    "english/MA/thanks.png~",
     "english/MA/thanks.png",
     "english/MA/magnificent_Anglais_Ma_makes_the_life.jpg",
     "english/MA/NECROPOLIS.jpg",
     "english/MA/KRIPTSHOW.png",
-    "english/MA/KRIPTSHOW.webp",
     "Progr/projet/Compte Rendu.md",
     "OS/Memento Widows.md",
     "protoCrypto/td2/td2.md.md",
@@ -186,10 +185,7 @@
     "IS/deroulement.md",
     "english/MA.md",
     "protoCrypto/td pas tp 1/exo2.md.md",
-    "protoCrypto/tdpastp1/maxime.lefranc",
-    "protoCrypto/tdpastp1/exo2.py",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/tdpastp1",
     "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/Untitled.md",
     "UselessMangetesmortsLanguage/td2/2.md.md",
