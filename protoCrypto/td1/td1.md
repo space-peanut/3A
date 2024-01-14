@@ -109,4 +109,4 @@ gpg: Good signature from "maxime <max.soulie01@laposte.net>" [ultimate]
  ~> openssl rsa -pubout -in Cours/3A/protoCrypto/td1/keys/private_key.pem -out Cours/3A/protoCrypto/td1/keys/public_key.pem
 ```
 
-## 3.3
+<div align="right">Maxime Soulié</div>
