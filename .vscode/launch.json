@@ -1,6 +1,20 @@
 {
   "configurations": [
     {
+      "type": "java",
+      "name": "Chess",
+      "request": "launch",
+      "mainClass": "com.example.src.main.java.Chess",
+      "projectName": "tp1"
+    },
+    {
+      "type": "java",
+      "name": "Chess",
+      "request": "launch",
+      "mainClass": "Java.tp1.src.main.java.com.example.Chess",
+      "projectName": "3A_2d32545f"
+    },
+    {
       "name": "C/C++: g++ build and debug active file",
       "type": "cppdbg",
       "request": "launch",
