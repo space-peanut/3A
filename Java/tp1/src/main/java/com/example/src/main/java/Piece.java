@@ -11,11 +11,21 @@ public class Piece
     /**
      * The piece location in the chessboard.
      * @param x the horizontal location.
-    /**
-     * The piece location in the chessboard.
-     * @param x the horizontal location.
      * @param y the vertical location.
      */
+    private int x;
+    private int y;
+
+    /**
+     * @param name The piece name: PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING.
+     */
+    private final PieceName name;
+    
+    /**
+     * @param color The piece color: black, white.
+     */
+    private final PieceColor color;
+    
     
     /**
      * Gets the horizontal location of the piece.
@@ -52,17 +62,22 @@ public class Piece
     public void setY(int y) {
         this.y = y;
     }
-    private int x;
-    private int y;
+
     /**
-     * The piece name: PAWN, ROOK, KNIGHT, BISHOP, QUEEN, KING.
+     * Gets the piece name.
+     * @return the piece name.
      */
-    private final PieceName name;
-    
+    public PieceName getName() {
+        return name;
+    }
+
     /**
-     * The piece color: black, white.
-     */
-    private final PieceColor color;
+     * Gets the piece color.
+     * @return the piece color.
+     */ 
+    public PieceColor getColor() {
+        return color;
+    }
     
     /**
      * Constructs a piece with given name and color.
@@ -105,11 +120,21 @@ public class Piece
                 int x = Keyboard.readInt();
                 System.out.print(" y: ");
                 int y = Keyboard.readInt();
+                this.x = x;
+                this.y = y;
                 break;
         }
         this.name = name;
         this.color = color;
     }
+
+    public Piece(PieceName name, PieceColor color, int x, int y) throws IllegalArgumentException{
+        this.x = x;
+        this.y = y;
+        this.name = name;
+        this.color = color;
+    }
+
     public void move(int dx, int dy)
     {
         this.x += dx;
@@ -130,22 +155,17 @@ public class Piece
         }
         switch (name) {
             case BISHOP:
-                return Math.abs(dx) == Math.abs(dy)?true:false;
+                return Math.abs(dx) == Math.abs(dy);
             case KING:
-                return (Math.abs(dx) <= 1 && Math.abs(dy) <= 1)?true:false;
+                return (Math.abs(dx) <= 1 && Math.abs(dy) <= 1);
             case KNIGHT:
-                return ((Math.abs(dx) == 1 && Math.abs(dy) == 2) || (Math.abs(dx) == 2 && Math.abs(dy) == 1)?true:false);
+                return ((Math.abs(dx) == 1 && Math.abs(dy) == 2) || (Math.abs(dx) == 2 && Math.abs(dy) == 1));
             case PAWN:
-                return color == PieceColor.black?dy==2?x==1?true:false:dy==1?true:false:dy==-2?x==6?true:false:dy==-1?true:false;
-            // if (color == PieceColor.black) {
-            //     return dy==2?x==1?true:false:dy==1?true:false;
-            // }else{
-            //     return dy==-2?x==6?true:false:dy==-1?true:false;
-            // }
+                return (((color ==PieceColor.black &&((y==1&&(dy==1||dy==2))||(y!=1&&dy==1)))||(color ==PieceColor.white &&((y==6&&(dy==-1||dy==-2))||(y!=6&&dy==-1))))&&dx==0);
             case QUEEN:
-                return (Math.abs(dx) == Math.abs(dy) || dx == 0 || dy == 0)?true:false;
+                return (Math.abs(dx) == Math.abs(dy) || dx == 0 || dy == 0);
             case ROOK:
-                return (dx == 0 || dy == 0)?true:false;
+                return (dx == 0 || dy == 0);
             default:
                 return false;
         }

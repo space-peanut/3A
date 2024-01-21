@@ -28,9 +28,9 @@ public class Chess
     {
         // ask for the piece properties
         System.out.print("Give the piece name " + Arrays.asList(PieceName.values()) + ": ");
-        PieceName name = PieceName.valueOf(Keyboard.readLine());
+        PieceName name = PieceName.valueOf(Keyboard.readLine().toUpperCase());
         System.out.print("Give the piece color " + Arrays.asList(PieceColor.values()) + ": ");
-        PieceColor color = PieceColor.valueOf(Keyboard.readLine());
+        PieceColor color = PieceColor.valueOf(Keyboard.readLine().toLowerCase());
 
         // make a piece
         Piece piece = new Piece(name, color);
@@ -44,7 +44,12 @@ public class Chess
 
         System.out.println(piece);
         // move the piece
-        if (piece.isValidMove(dx, dy)) piece.move(dx, dy);
+        if (piece.isValidMove(dx, dy)){ 
+            System.out.println("Valid move");
+            piece.move(dx, dy);
+        }else{
+            System.out.println("Invalid move");
+        }
 
         // print the piece
         System.out.println(piece);
