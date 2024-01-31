@@ -1,0 +1,135 @@
+set label "Node1"  at 38,34 
+set label "Node2"  at 28,26 
+set label "Node3"  at 15,21 
+set label "Node4"  at 37,17 
+set label "Node5"  at 35,5 
+set label "Node6"  at 29,12 
+set label "Node7"  at 20,7 
+set label "Node8"  at 26,23 
+set label "Node9"  at 33,15 
+set xrange [5:48]
+set yrange [-5:44]
+set object rect from 37,33 to 39,35 fc rgb  "red"
+set object rect from 14,20 to 16,22 fc rgb  "red"
+set object rect from 28,11 to 30,13 fc rgb  "red"
+set object rect from 19,6 to 21,8 fc rgb  "red"
+set object circle at 26,23 size 1 fc rgb  "red"
+set object rect from 37,33 to 39,35 fc rgb  "green"
+set object rect from 36,16 to 38,18 fc rgb  "green"
+set object circle at 33,15 size 1 fc rgb  "green"
+set object rect from 37,33 to 39,35 fc rgb  "orange"
+set object circle at 29,12 size 1 fc rgb  "orange"
+set object rect from 19,6 to 21,8 fc rgb  "orange"
+set object rect from 25,22 to 27,24 fc rgb  "orange"
+set object rect from 32,14 to 34,16 fc rgb  "orange"
+set object circle at 38,34 size 1 fc rgb  "cyan"
+set object rect from 14,20 to 16,22 fc rgb  "cyan"
+set object rect from 28,11 to 30,13 fc rgb  "cyan"
+plot "net_2022_04_23_03_49_33_flow_3_NC.dat" every :::1::20 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"
+plot "net_2022_04_23_03_49_33Node1.dat" every :::1::250 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object circle at 26,23 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 36,16 to 38,18 fc rgb  "white"
+set object circle at 33,15 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object circle at 29,12 size 1 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object rect from 25,22 to 27,24 fc rgb  "white"
+set object rect from 32,14 to 34,16 fc rgb  "white"
+set object circle at 38,34 size 1 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set label "Node2 (NC on flows 0 & 3)"  at 5,8
+set label "Node2 (NC on flows 2 & 3)"  at 5,6
+set label "Node3 (NC on flows 0 & 3)"  at 5,4
+set label "Node3 (NC on flows 2 & 3)"  at 5,2
+set object rect from 37,33 to 39,35 fc rgb  "red"
+set object rect from 14,20 to 16,22 fc rgb  "red"
+set object rect from 28,11 to 30,13 fc rgb  "red"
+set object rect from 19,6 to 21,8 fc rgb  "red"
+set object circle at 26,23 size 1 fc rgb  "red"
+plot "net_2022_04_23_03_49_33_flow_3_0_NC.dat" every :::1::20 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object circle at 26,23 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 36,16 to 38,18 fc rgb  "white"
+set object circle at 33,15 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object circle at 29,12 size 1 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object rect from 25,22 to 27,24 fc rgb  "white"
+set object rect from 32,14 to 34,16 fc rgb  "white"
+set object circle at 38,34 size 1 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set label "Node2 (NC on flows 0 & 3)"  at 5,8
+set label "Node2 (NC on flows 2 & 3)"  at 5,6
+set label "Node3 (NC on flows 0 & 3)"  at 5,4
+set label "Node3 (NC on flows 2 & 3)"  at 5,2
+set object rect from 37,33 to 39,35 fc rgb  "green"
+set object rect from 36,16 to 38,18 fc rgb  "green"
+set object circle at 33,15 size 1 fc rgb  "green"
+plot "net_2022_04_23_03_49_33_flow_3_1_NC.dat" every :::1::20 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object circle at 26,23 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 36,16 to 38,18 fc rgb  "white"
+set object circle at 33,15 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object circle at 29,12 size 1 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object rect from 25,22 to 27,24 fc rgb  "white"
+set object rect from 32,14 to 34,16 fc rgb  "white"
+set object circle at 38,34 size 1 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set label "Node2 (NC on flows 0 & 3)"  at 5,8
+set label "Node2 (NC on flows 2 & 3)"  at 5,6
+set label "Node3 (NC on flows 0 & 3)"  at 5,4
+set label "Node3 (NC on flows 2 & 3)"  at 5,2
+set object rect from 37,33 to 39,35 fc rgb  "orange"
+set object circle at 29,12 size 1 fc rgb  "orange"
+set object rect from 19,6 to 21,8 fc rgb  "orange"
+set object rect from 25,22 to 27,24 fc rgb  "orange"
+set object rect from 32,14 to 34,16 fc rgb  "orange"
+plot "net_2022_04_23_03_49_33_flow_3_2_NC.dat" every :::1::20 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object circle at 26,23 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object rect from 36,16 to 38,18 fc rgb  "white"
+set object circle at 33,15 size 1 fc rgb  "white"
+set object rect from 37,33 to 39,35 fc rgb  "white"
+set object circle at 29,12 size 1 fc rgb  "white"
+set object rect from 19,6 to 21,8 fc rgb  "white"
+set object rect from 25,22 to 27,24 fc rgb  "white"
+set object rect from 32,14 to 34,16 fc rgb  "white"
+set object circle at 38,34 size 1 fc rgb  "white"
+set object rect from 14,20 to 16,22 fc rgb  "white"
+set object rect from 28,11 to 30,13 fc rgb  "white"
+set label "Node2 (NC on flows 0 & 3)"  at 5,8
+set label "Node2 (NC on flows 2 & 3)"  at 5,6
+set label "Node3 (NC on flows 0 & 3)"  at 5,4
+set label "Node3 (NC on flows 2 & 3)"  at 5,2
+set object circle at 38,34 size 1 fc rgb  "cyan"
+set object rect from 14,20 to 16,22 fc rgb  "cyan"
+set object rect from 28,11 to 30,13 fc rgb  "cyan"
+plot "net_2022_04_23_03_49_33_flow_3_3_NC.dat" every :::1::20 with lp, "" every :::0::0 with points;
+pause -1 " (-> return)"

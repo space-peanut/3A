@@ -1,0 +1,29 @@
+Type : 1 , "Node",,
+Type : 2 , "Node1",38,34
+Type : 2 , "Node2",28,26
+Type : 2 , "Node3",15,21
+Type : 2 , "Node4",37,17
+Type : 2 , "Node5",35,5
+Type : 2 , "Node6",29,12
+Type : 2 , "Node7",20,7
+Type : 2 , "Node8",26,23
+Type : 2 , "Node9",33,15
+Type : 3 , "traffic",,
+Type : 4 , "Node8","Node1","Node3","Node7","Node6"
+Type : 4 , "Node9","Node1","Node4"
+Type : 4 , "Node6","Node1","Node7","Node8","Node9"
+Type : 4 , "Node1","Node6","Node3"
+Type : 5 , "connection",,
+Type : 4 , "Node1","Node2"
+Type : 4 , "Node2","Node3"
+Type : 4 , "Node2","Node4"
+Type : 4 , "Node3","Node7"
+Type : 4 , "Node4","Node5"
+Type : 4 , "Node5","Node9"
+Type : 4 , "Node5","Node6"
+Type : 4 , "Node5","Node7"
+Type : 4 , "Node6","Node7"
+Type : 4 , "Node7","Node8"
+Type : 6 , 
+Type : 6 , 
+Type : 6 , 

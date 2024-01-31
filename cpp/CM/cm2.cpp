@@ -6,7 +6,6 @@
 using namespace std;
 
 int main(int argc, char *argv[]){
-    /*
     ifstream in_file;
     string filename {"../cm2"};
     ofstream out_file;
@@ -24,27 +23,27 @@ int main(int argc, char *argv[]){
         cout << line << endl;
     }
     in_file.close();
-    */
 
-    string str {"\"node8\",\"node1\",\"node3\",\"node7\",\"node6\""};
-    vector<string> v;
-    string node;
-    signed int occ = str.find(",");
-    signed int occ2=0;
-    while (occ!=-1) {
-        v.push_back(str.substr(occ2,occ));
-        occ2 = occ+1;
-        occ = str.find(",", occ2);
-        if (occ==-1)
-        {
-            v.push_back(str.substr(occ2,str.size()));
-        }
-        
-    }
 
-    for (string node : v) {
-        cout << node << endl;
-    }
-
+    // string str {"\"node8\",\"node1\",\"node3\",\"node7\",\"node6\""};
+    // vector<string> v;
+    // string node;
+    // signed int occ = str.find(",");
+    // signed int occ2=0;
+    // while (occ!=-1) {
+    //     v.push_back(str.substr(occ2,occ));
+    //     occ2 = occ+1;
+    //     occ = str.find(",", occ2);
+    //     if (occ==-1)
+    //     {
+    //         v.push_back(str.substr(occ2,str.size()));
+    //     }
+    //     
+    // }
+    //
+    // for (string node : v) {
+    //     cout << node << endl;
+    // }
+    //
     return 0;
 }

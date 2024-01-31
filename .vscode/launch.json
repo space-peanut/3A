@@ -2,6 +2,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SimplePicture",
+      "request": "launch",
+      "mainClass": "Java.tpet3.src.main.java.com.example.SimplePicture",
+      "projectName": "3A_2d32545f"
+    },
+    {
+      "type": "java",
+      "name": "main",
+      "request": "launch",
+      "mainClass": "Java.tp3.src.main",
+      "projectName": "3A_2d32545f"
+    },
+    {
+      "type": "java",
+      "name": "SimplePicture",
+      "request": "launch",
+      "mainClass": "Java.tp3.src.SimplePicture",
+      "projectName": "3A_2d32545f"
+    },
+    {
+      "type": "java",
       "name": "Chess",
       "request": "launch",
       "mainClass": "com.example.src.main.java.Chess",
