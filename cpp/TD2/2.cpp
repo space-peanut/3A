@@ -1,4 +1,5 @@
 #include "Node.h"
+#include <algorithm>
 #include <fstream>
 #include <iostream>
 #include <iterator>
@@ -109,13 +110,53 @@ void writeDat(std::string inPath, std::string outPath) {
 }
 
 void writeToMatrix(std::string inPath,
-                   std::vector<std::vector<bool>> &outMatrix) {
-  
+                   std::vector<std::vector<int>> &outMatrix) {
+  std::map<std::string, std::pair<int, int>> nodes;
+
+  std::ifstream in_file;
+  in_file.open(inPath);
+
+  std::string line;
+  std::string state;
+
+  while (!in_file.eof()) {
+    getline(in_file, line);
+    getCode(line) == 1   ? state = "NODE"
+    : getCode(line) == 3 ? state = "TRAFFIC"
+    : getCode(line) == 5 ? state = "CONNECTION"
+                         : state = state;
+    if (state == "NODE") {
+      outMatrix.push_back(std::vector<int>{});
+    }
+    if (getCode(line) == 3) {
+      for (int i = 0; i < outMatrix.size(); i++) {
+        outMatrix.at(i).resize(outMatrix.size());
+      }
+    }
+    if (state == "CONNECTION" && getCode(line) == 6) {
+      int name1End = line.find_first_of('\",');
+      std::string name1 = line.substr(1, name1End - 2);
+      std::string name2 =
+          line.substr(name1End + 2, line.length() - name1End - 3);
+
+      int node1 = stoi(name1.substr(4, name1.size()));
+      int node2 = stoi(name2.substr(4, name2.size()));
+
+      outMatrix.at(node1 - 1).at(node2 - 1) = 1;
+      outMatrix.at(node2 - 1).at(node1 - 1) = 1;
+    }
+  }
 }
 
 int main(int argc, char *argv[]) {
-  std::vector<std::vector<bool>> adjMatrix;
-
+  std::vector<std::vector<int>> adjMatrix{};
+  writeToMatrix("./test-PMR_simple.csv", adjMatrix);
+  for (const auto &row : adjMatrix) {
+    for (const auto &element : row) {
+      std::cout << element << " ";
+    }
+    std::cout << std::endl;
+  }
   // std::ifstream in_file;
   // std::string filename{"./test-PMR_simple.csv"};
   //
@@ -134,7 +175,7 @@ int main(int argc, char *argv[]) {
   // in_file.close();
   // out_file.close();
 
-  writeDat("./test-PMR_simple.csv", "./res.dat");
+  // writeDat("./test-PMR_simple.csv", "./res.dat");
 
   return 0;
 }
