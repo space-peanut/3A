@@ -10,28 +10,8 @@
 #include <utility>
 #include <vector>
 
-// class Node {V
-// private:
-//   std::string name;
-//   signed int x;
-//   signed int y;
-//
-// public:
-//   Node() {}
-//   Node(std::string name, int x, int y) {
-//     this->name = name;
-//     this->x = x;
-//     this->y = y;
-//   };
-//   Node(std::string name) { this->name = name; };
-//   std::string getName() { return name; };
-//   int getX() { return x; };
-//   int getY() { return y; };
-//   void print() {
-//     std::cout << name << " : (" << x << "," << y << ")" << std::endl;
-//   };
-// };
-//
+unsigned int inf = 0 - 1;
+
 int getCode(std::string s) {
   int code;
   (s == "\"Node\",,")                                                ? code = 1
@@ -93,7 +73,6 @@ void writeDat(std::string inPath, std::string outPath) {
       std::string name1 = line.substr(1, name1End - 2);
       std::string name2 =
           line.substr(name1End + 2, line.length() - name1End - 3);
-      std::cout << name1 << " " << name2 << std::endl;
 
       int x1 = nodes[name1].first;
       int y1 = nodes[name1].second;
@@ -107,6 +86,17 @@ void writeDat(std::string inPath, std::string outPath) {
   }
   in_file.close();
   out_file.close();
+
+  FILE *gnuplotPipe = popen("gnuplot -persist", "w");
+  if (!gnuplotPipe) {
+    std::cerr << "Error opening Gnuplot pipe." << std::endl;
+  }
+
+  fprintf(gnuplotPipe, "plot '%s' with linespoints title 'Data'\n",
+          outPath.c_str());
+  fflush(gnuplotPipe);
+
+  pclose(gnuplotPipe);
 }
 
 void writeToMatrix(std::string inPath,
@@ -129,6 +119,7 @@ void writeToMatrix(std::string inPath,
       outMatrix.push_back(std::vector<int>{});
     }
     if (getCode(line) == 3) {
+      outMatrix.pop_back();
       for (int i = 0; i < outMatrix.size(); i++) {
         outMatrix.at(i).resize(outMatrix.size());
       }
@@ -147,6 +138,19 @@ void writeToMatrix(std::string inPath,
     }
   }
 }
+
+std::vector<int> initDist(std::vector<std::vector<int>> matrix, int startNode) {
+  std::vector<int> distance(matrix.size());
+  for (int i = 0; i < distance.size(); i++) {
+    i == startNode - 1 ? distance.at(i) = 0 : distance.at(i) = inf;
+  }
+}
+
+// std::vector<std::string> djikstra(std::vector<std::vector<int>> adjMatrix,
+// std::string start, std::string end){
+//
+//   return;
+// }
 
 int main(int argc, char *argv[]) {
   std::vector<std::vector<int>> adjMatrix{};
@@ -175,7 +179,8 @@ int main(int argc, char *argv[]) {
   // in_file.close();
   // out_file.close();
 
-  // writeDat("./test-PMR_simple.csv", "./res.dat");
+  writeDat("./Examples/papillonavecnoeudinitialetterminalpardelegation.csv",
+           "./pap.dat");
 
   return 0;
 }
