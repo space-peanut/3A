@@ -98,7 +98,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "logique_math/cours.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "logique_math/cours.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,9 +135,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "logique_math/cours.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -160,12 +156,6 @@
   },
   "active": "5ca1f63f4cb5ad85",
   "lastOpenFiles": [
-    "logique_math/cours.md",
-    "logique_math/TD1.md",
-    "maths/sageMath.md",
-    "logique_math",
-    "Pasted image 20240110174606.png",
-    "maths",
     "cpp/CM/CM3.md",
     "english/dream job poster.md",
     "cpp/CM/exosMem.cpp~",
@@ -176,9 +166,12 @@
     "cpp/CM/cm2.cpp~",
     "cpp/CM/output/exosCM3",
     "cpp/a.out",
+    "cpp/CM/exosCM3.cpp",
     "Untitled.md",
     "tourcoingTaMere/notes gestion.md",
     "cpp/TD1/Compte rendu TD 1 C++.md",
+    "cpp/TD2/1",
+    "Pasted image 20240110174606.png",
     "DGSI.md",
     "cpp/CM/CM2 part 2.md",
     "cpp/CM/CM2.md",
@@ -191,11 +184,7 @@
     "english/MA/background-main6.jpg",
     "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
     "english/MA/thanks.png",
-    "english/MA/magnificent_Anglais_Ma_makes_the_life.jpg",
-    "english/MA/NECROPOLIS.jpg",
-    "english/MA/KRIPTSHOW.png",
     "Progr/projet/Compte Rendu.md",
-    "OS/Memento Widows.md",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/tdpastp1/exo2.md",
     "Progr/l'autreCoursLa.md",
@@ -205,6 +194,8 @@
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/Untitled.md",
-    "UselessMangetesmortsLanguage/td2/2.md.md"
+    "UselessMangetesmortsLanguage/td2/2.md.md",
+    "UselessMangetesmortsLanguage/td2/1.md.md",
+    "protoCrypto/td1/td1.md"
   ]
 }
