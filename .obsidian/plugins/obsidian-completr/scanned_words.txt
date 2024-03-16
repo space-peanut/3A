@@ -144,6 +144,8 @@ Pvg
 PgE
 Pb
 Partie
+Pmv
+PUU
 obj
 oX
 onk
@@ -792,6 +794,8 @@ skills
 sword
 soft
 suprimee
+soit
+semantique
 BC
 BR
 BitsPerComponent
@@ -1227,6 +1231,9 @@ creances
 clients
 capables
 corruption
+ctF
+classique
+classiques
 SS
 Subtype
 SMask
@@ -1469,6 +1476,7 @@ HyZ
 Hnc
 Hv
 HC
+Hmm
 pS
 pM
 pr
@@ -1709,6 +1717,9 @@ perks
 pet
 power
 pointer
+premier
+predicat
+propositions
 fg
 fm
 fvr
@@ -1881,6 +1892,8 @@ finance
 fukai
 followship
 functions
+fMB
+feuille
 dg
 dp
 dj
@@ -2402,6 +2415,8 @@ TwU
 TVM
 Trash
 Terrorisme
+TIDATx
+TTVJE
 XObject
 XQ
 Xq
@@ -3086,6 +3101,7 @@ Dei
 DBH
 DGSI
 Destruction
+DKS
 Al
 Ai
 AB
@@ -3396,6 +3412,7 @@ actif
 arg
 avant
 affectation
+approche
 nO
 nr
 nm
@@ -3737,6 +3754,7 @@ reading
 remettre
 reserve
 remttre
+ropositionnelle
 YYk
 YiD
 Yt
@@ -3866,6 +3884,7 @@ Ywt
 YiL
 YyLs
 YPl
+Ylv
 wy
 wX
 wDL
@@ -4276,6 +4295,7 @@ Mark
 Magasin
 Massive
 MCO
+Modeliser
 ZB
 ZP
 Zr
@@ -4545,6 +4565,7 @@ jIT
 jrg
 judiciaires
 job
+jki
 Ug
 UQ
 UoLn
@@ -4837,6 +4858,8 @@ lettre
 liee
 leadership
 love
+learnig
+logiques
 zX
 zm
 zc
@@ -5509,6 +5532,7 @@ vtJ
 vvv
 valley
 veut
+voir
 Rd
 RX
 Rb
@@ -5651,6 +5675,8 @@ RekF
 RMW
 Renseignement
 Receuillir
+RJi
+RS
 io
 iL
 iF
@@ -6127,6 +6153,7 @@ travail
 trace
 total
 tech
+temporelles
 kE
 ka
 kF
@@ -6264,6 +6291,7 @@ ksh
 kA
 kll
 kpj
+kijJ
 yS
 ye
 ya
@@ -7011,6 +7039,7 @@ xgO
 xtL
 xmQ
 xZVW
+xVh
 ub
 uy
 ukC
@@ -7339,6 +7368,9 @@ mycologist
 moeve
 memoire
 maintenant
+machine
+multivalentes
+motivations
 GK
 GO
 GH

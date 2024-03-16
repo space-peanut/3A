@@ -11,11 +11,28 @@
             "id": "71775b5d24d51599",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "logique_math/cours.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "77a6fee14e7e2432",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "logique_math/TD1.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -81,6 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "logique_math/cours.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "logique_math/cours.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +137,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "logique_math/cours.md"
+              }
             }
           }
         ]
@@ -137,8 +158,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "71775b5d24d51599",
+  "active": "5ca1f63f4cb5ad85",
   "lastOpenFiles": [
+    "logique_math/cours.md",
+    "logique_math/TD1.md",
+    "maths/sageMath.md",
+    "logique_math",
+    "Pasted image 20240110174606.png",
+    "maths",
     "cpp/CM/CM3.md",
     "english/dream job poster.md",
     "cpp/CM/exosMem.cpp~",
@@ -149,12 +176,9 @@
     "cpp/CM/cm2.cpp~",
     "cpp/CM/output/exosCM3",
     "cpp/a.out",
-    "cpp/CM/exosCM3.cpp",
     "Untitled.md",
     "tourcoingTaMere/notes gestion.md",
     "cpp/TD1/Compte rendu TD 1 C++.md",
-    "cpp/TD2/1",
-    "Pasted image 20240110174606.png",
     "DGSI.md",
     "cpp/CM/CM2 part 2.md",
     "cpp/CM/CM2.md",
@@ -181,8 +205,6 @@
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
     "protoCrypto/Untitled.md",
-    "UselessMangetesmortsLanguage/td2/2.md.md",
-    "UselessMangetesmortsLanguage/td2/1.md.md",
-    "protoCrypto/td1/td1.md"
+    "UselessMangetesmortsLanguage/td2/2.md.md"
   ]
 }
