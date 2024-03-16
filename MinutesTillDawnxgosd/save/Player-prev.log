@@ -1,0 +1,39 @@
+Mono path[0] = 'Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MinutesTillDawn_Data/Managed'
+Mono config path = 'Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MonoBleedingEdge/etc'
+Initialize engine version: 2019.4.40f1 (ffc62b691db5)
+[Subsystems] Discovering subsystems at path Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MinutesTillDawn_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Vendor:   
+    VRAM:     3318 MB
+    Driver:   31.0.21902.5
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.146 seconds
+<RI> Initializing input.
+New input system (experimental) initialized
+<RI> Initialized touch support.
+UnloadTime: 2.937200 ms
+Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled). 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Odin Serializer detected whitelisted runtime platform WindowsPlayer and memory read test succeeded; enabling all unaligned memory read/writes. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Exception: SteamApi_Init returned false. Steam isn't running, couldn't find Steam, AppId is ureleased, Don't own AppId.
+  at Steamworks.SteamClient.Init (System.UInt32 appid, System.Boolean asyncCallbacks) [0x00046] in <19bd4cc6a4004258bf538b05ac1133d6>:0 
+  at flanne.SteamIntegration.Awake () [0x0001e] in <7d16bf5c94214907abf8179afb6fefb3>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 33.860800 ms
+
+Unloading 4135 unused Assets to reduce memory usage. Loaded Objects now: 212821.
+Total: 349.479000 ms (FindLiveObjects: 19.334000 ms CreateObjectMapping: 2.228400 ms MarkObjects: 324.171900 ms  DeleteObjects: 3.743500 ms)
+
+Setting up 4 worker threads for Enlighten.
+  Thread -> id: 244 -> priority: 1 
+  Thread -> id: 248 -> priority: 1 
+  Thread -> id: 24c -> priority: 1 
+  Thread -> id: 250 -> priority: 1 

@@ -1,0 +1,178 @@
+Mono path[0] = 'Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MinutesTillDawn_Data/Managed'
+Mono config path = 'Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MonoBleedingEdge/etc'
+Initialize engine version: 2019.4.40f1 (ffc62b691db5)
+[Subsystems] Discovering subsystems at path Z:/home/max/Games/Heroic/MinutesTillDawnxgosd/MinutesTillDawn_Data/UnitySubsystems
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1050 (ID=0x1c91)
+    Vendor:   
+    VRAM:     3318 MB
+    Driver:   31.0.21902.5
+Begin MonoManager ReloadAssembly
+- Completed reload, in  0.173 seconds
+<RI> Initializing input.
+New input system (experimental) initialized
+<RI> Initialized touch support.
+UnloadTime: 1.484500 ms
+Odin Serializer ArchitectureInfo initialization with defaults (all unaligned read/writes disabled). 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Odin Serializer detected whitelisted runtime platform WindowsPlayer and memory read test succeeded; enabling all unaligned memory read/writes. 
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+System.Exception: SteamApi_Init returned false. Steam isn't running, couldn't find Steam, AppId is ureleased, Don't own AppId.
+  at Steamworks.SteamClient.Init (System.UInt32 appid, System.Boolean asyncCallbacks) [0x00046] in <19bd4cc6a4004258bf538b05ac1133d6>:0 
+  at flanne.SteamIntegration.Awake () [0x0001e] in <7d16bf5c94214907abf8179afb6fefb3>:0  
+(Filename: C:\buildslave\unity\build\Runtime/Export/Debug/Debug.bindings.h Line: 39)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 32.229300 ms
+
+Unloading 4135 unused Assets to reduce memory usage. Loaded Objects now: 212821.
+Total: 349.264200 ms (FindLiveObjects: 14.704100 ms CreateObjectMapping: 3.531300 ms MarkObjects: 327.444200 ms  DeleteObjects: 3.583500 ms)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 36775 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 35621 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 36173 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 36726 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 36294 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 35604 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 36811 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Uploading Crash Report
+NullReferenceException: Object reference not set to an instance of an object
+  at Steamworks.Data.Achievement.Trigger (System.Boolean apply) [0x00006] in <19bd4cc6a4004258bf538b05ac1133d6>:0 
+  at flanne.SteamIntegration.UnlockAchievement (System.String id) [0x00008] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.PlayerSurvivedState.CheckAchievmentUnlocks () [0x00000] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.PlayerSurvivedState.Enter () [0x000a6] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.Transition (State value) [0x00031] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.set_CurrentState (State value) [0x00000] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.ChangeState[T] () [0x00007] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.KillEnemiesState+<KillEnemiesCR>d__2.MoveNext () [0x00194] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at UnityEngine.SetupCoroutine.InvokeMoveNext (System.Collections.IEnumerator enumerator, System.IntPtr returnValueAddress) [0x00026] in <85d1d3e7744a4a47b5f51883bf40bba2>:0 
+ 
+(Filename: <19bd4cc6a4004258bf538b05ac1133d6> Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 700.602000 ms
+
+Unloading 74 unused Assets to reduce memory usage. Loaded Objects now: 12778.
+Total: 53.140300 ms (FindLiveObjects: 0.726200 ms CreateObjectMapping: 0.401700 ms MarkObjects: 51.798500 ms  DeleteObjects: 0.212700 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.798600 ms
+
+Unloading 3846 unused Assets to reduce memory usage. Loaded Objects now: 231600.
+Total: 333.270200 ms (FindLiveObjects: 13.662600 ms CreateObjectMapping: 1.877900 ms MarkObjects: 314.460800 ms  DeleteObjects: 3.267700 ms)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 37020 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 37111 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Curl error 28: Failed to connect to cdp.cloud.unity3d.com port 443 after 37162 ms: Timed out
+ 
+(Filename:  Line: 867)
+
+Uploading Crash Report
+NullReferenceException: Object reference not set to an instance of an object
+  at Steamworks.Data.Achievement.Trigger (System.Boolean apply) [0x00006] in <19bd4cc6a4004258bf538b05ac1133d6>:0 
+  at flanne.SteamIntegration.UnlockAchievement (System.String id) [0x00008] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.PlayerSurvivedState.CheckAchievmentUnlocks () [0x00000] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.PlayerSurvivedState.Enter () [0x000a6] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.Transition (State value) [0x00031] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.set_CurrentState (State value) [0x00000] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at StateMachine.ChangeState[T] () [0x00007] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Core.RavenUnlockedState.OnConfirm () [0x00000] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at UnityEngine.Events.InvokableCall.Invoke () [0x00010] in <85d1d3e7744a4a47b5f51883bf40bba2>:0 
+  at UnityEngine.Events.UnityEvent.Invoke () [0x00022] in <85d1d3e7744a4a47b5f51883bf40bba2>:0 
+  at UnityEngine.UI.Button.Press () [0x0001c] in <b8d3cc04767846359bfd8ef8f18d18ca>:0 
+  at UnityEngine.UI.Button.OnPointerClick (UnityEngine.EventSystems.PointerEventData eventData) [0x00009] in <b8d3cc04767846359bfd8ef8f18d18ca>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute (UnityEngine.EventSystems.IPointerClickHandler handler, UnityEngine.EventSystems.BaseEventData eventData) [0x00007] in <b8d3cc04767846359bfd8ef8f18d18ca>:0 
+  at UnityEngine.EventSystems.ExecuteEvents.Execute[T] (UnityEngine.GameObject target, UnityEngine.EventSystems.BaseEventData eventData, UnityEngine.EventSystems.ExecuteEvents+EventFunction`1[T1] functor) [0x00063] in <b8d3cc04767846359bfd8ef8f18d18ca>:0 
+UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
+UnityEngine.DebugLogHandler:LogException(Exception, Object)
+UnityEngine.Logger:LogException(Exception, Object)
+UnityEngine.Debug:LogException(Exception)
+UnityEngine.EventSystems.ExecuteEvents:Execute(GameObject, BaseEventData, EventFunction`1)
+UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointerButton(ButtonState&, PointerEventData)
+UnityEngine.InputSystem.UI.InputSystemUIInputModule:ProcessPointer(PointerModel&)
+UnityEngine.InputSystem.UI.InputSystemUIInputModule:Process()
+UnityEngine.EventSystems.EventSystem:Update()
+ 
+(Filename: <19bd4cc6a4004258bf538b05ac1133d6> Line: 0)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 482.003000 ms
+
+Unloading 68 unused Assets to reduce memory usage. Loaded Objects now: 12782.
+Total: 55.132500 ms (FindLiveObjects: 1.128100 ms CreateObjectMapping: 0.494900 ms MarkObjects: 53.351400 ms  DeleteObjects: 0.157000 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.065400 ms
+
+Unloading 3617 unused Assets to reduce memory usage. Loaded Objects now: 255630.
+Total: 377.572500 ms (FindLiveObjects: 15.336500 ms CreateObjectMapping: 3.759200 ms MarkObjects: 353.746400 ms  DeleteObjects: 4.728900 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 244.964800 ms
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 12778.
+Total: 50.697000 ms (FindLiveObjects: 0.900500 ms CreateObjectMapping: 0.364800 ms MarkObjects: 49.280600 ms  DeleteObjects: 0.150000 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.078400 ms
+
+Unloading 3607 unused Assets to reduce memory usage. Loaded Objects now: 257822.
+Total: 376.425500 ms (FindLiveObjects: 14.586300 ms CreateObjectMapping: 5.622100 ms MarkObjects: 352.596800 ms  DeleteObjects: 3.619100 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 241.649600 ms
+
+Unloading 72 unused Assets to reduce memory usage. Loaded Objects now: 12778.
+Total: 51.361600 ms (FindLiveObjects: 0.889500 ms CreateObjectMapping: 0.394200 ms MarkObjects: 49.905300 ms  DeleteObjects: 0.171200 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.152900 ms
+
+Unloading 3610 unused Assets to reduce memory usage. Loaded Objects now: 261818.
+Total: 378.389000 ms (FindLiveObjects: 15.223400 ms CreateObjectMapping: 3.581000 ms MarkObjects: 355.563000 ms  DeleteObjects: 4.020400 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+Uploading Crash Report
+NullReferenceException: Object reference not set to an instance of an object
+  at flanne.Gun.StopShooting () [0x0003a] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.Player.ShootingState.Exit () [0x000b0] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+  at flanne.PlayerController.OnDisable () [0x00017] in <7d16bf5c94214907abf8179afb6fefb3>:0 
+ 
+(Filename: <7d16bf5c94214907abf8179afb6fefb3> Line: 0)
+
+UnloadTime: 279.188200 ms
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 58655.
+Total: 215.829900 ms (FindLiveObjects: 3.677700 ms CreateObjectMapping: 0.638700 ms MarkObjects: 211.406300 ms  DeleteObjects: 0.106000 ms)
+
