@@ -86,6 +86,7 @@
               "type": "backlink",
               "state": {
                 "file": "rng/le-cours-est-RNG-!.md",
+                "file": "logique_math/cours.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,6 +104,7 @@
               "type": "outgoing-link",
               "state": {
                 "file": "rng/le-cours-est-RNG-!.md",
+                "file": "logique_math/cours.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,6 +128,8 @@
               "type": "outline",
               "state": {
                 "file": "rng/le-cours-est-RNG-!.md"
+              
+                "file": "logique_math/cours.md"
               }
             }
           }
@@ -163,8 +167,220 @@
     "logique_math/tp1/TP1.md",
     "logique_math/cours.md",
     "analyse-risque/etude_cas_TIN.md",
+    "logique_math/cours.md",
+    "logique_math/TD1.md",
+    "maths/sageMath.md",
+    "logique_math",
+    "Pasted image 20240110174606.png",
+    "maths",
     "cpp/CM/CM3.md",
     "english/dream job poster.md",
+    "cpp/CM/exosMem.cpp~",
+    "cpp/CM/output/exosMem",
+    "cpp/CM/exosMem.cpp",
+    "cpp/CM/exosCM3.cpp~",
+    "cm2",
+    "cpp/CM/cm2.cpp~",
+    "cpp/CM/output/exosCM3",
+    "cpp/a.out",
+    "Untitled.md",
+    "tourcoingTaMere/notes gestion.md",
+    "cpp/TD1/Compte rendu TD 1 C++.md",
+    "DGSI.md",
+    "cpp/CM/CM2 part 2.md",
+    "cpp/CM/CM2.md",
+    "cpp/CM/CM2 exo1.md",
+    "tourcoing/Untitled.md",
+    "english/gerund vs inf.md",
+    "english/MA/magoyond.jpg",
+    "english/MA/background-main6.png",
+    "english/MA/background-main6.webp",
+    "english/MA/background-main6.jpg",
+    "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
+    "english/MA/thanks.png",
+    "english/MA/magnificent_Anglais_Ma_makes_the_life.jpg",
+    "english/MA/NECROPOLIS.jpg",
+    "english/MA/KRIPTSHOW.png",
+    "Progr/projet/Compte Rendu.md",
+    "OS/Memento Widows.md",
+    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/tdpastp1/exo2.md",
+    "Progr/l'autreCoursLa.md",
+    "Progr/l'autreCoursla/l'autreCoursLa.md",
+    "IS/deroulement.md",
+    "protoCrypto/td pas tp 1/exo2.md.md",
+    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/Untitled.md",
+    "UselessMangetesmortsLanguage/td2/2.md.md"
+  ]
+}{
+  "main": {
+    "id": "1350521cd2ae4230",
+    "type": "split",
+    "children": [
+      {
+        "id": "89e68583011b2ea3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "71775b5d24d51599",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ikiga-de-ses-grands-morts/ikigai.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3a12de230f3a44ff",
+    "type": "split",
+    "children": [
+      {
+        "id": "96d1ef85ce631d4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5ca1f63f4cb5ad85",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "432862948ce7716f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "970e8f9887cabaab",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "30ce5f4cd0d6562e",
+    "type": "split",
+    "children": [
+      {
+        "id": "51fcd3b905c73f3f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "95f5121ce4c957e1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "ikiga-de-ses-grands-morts/ikigai.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "277d9ebddb6989e6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "ikiga-de-ses-grands-morts/ikigai.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "750fc1e445c91230",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "0fa0fdb503def49b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "ikiga-de-ses-grands-morts/ikigai.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "71775b5d24d51599",
+  "lastOpenFiles": [
+    "ikiga-de-ses-grands-morts/ikigai MaximeSoulie.pdf",
+    "OS/Memento Widows.md",
+    "ikiga-de-ses-grands-morts/ikigai.md",
+    "IOT/10DHT11.mp4",
+    "ikiga-de-ses-grands-morts/Lettre motivation maxime soulie.pdf",
+    "ikiga-de-ses-grands-morts/lu2196424u08.tmp",
+    "ikiga-de-ses-grands-morts/offre.png",
+    "ikiga-de-ses-grands-morts/Capture d’écran 2024-03-04 151454.png",
+    "Pasted image 20240304151337.png",
+    "Offre d'emploi Développement logiciel pour l’analyse de traces d’exécutions F_H Rennes, 35, Ille-et-Vilaine, Bretagne - ANSSI - Agence nationale de la sécurité des systèmes d'information.pdf",
+    "cpp/CM/CM3.md",
+    "english/dream job poster.md",
+    "cpp/CM/exosMem.cpp~",
+    "cpp/CM/output/exosMem",
+    "cpp/CM/exosMem.cpp",
+    "cpp/CM/exosCM3.cpp~",
+    "cm2",
+    "cpp/CM/cm2.cpp~",
     "Untitled.md",
     "tourcoingTaMere/notes gestion.md",
     "cpp/TD1/Compte rendu TD 1 C++.md",
@@ -189,6 +405,9 @@
     "IS/deroulement.md",
     "protoCrypto/td pas tp 1/exo2.md.md",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md"
+    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
+    "protoCrypto/Untitled.md",
+    "UselessMangetesmortsLanguage/td2/2.md.md",
+    "UselessMangetesmortsLanguage/td2/1.md.md"
   ]
 }
