@@ -1,0 +1,10 @@
+op(750,prefix,"-").
+op(795,infix_right,"->").
+op(805,infix_right,"<->").
+set(raw).
+set(binary_resolution).
+set(factor).
+formulas(sos ).
+all x exists y P(x,y).
+-all x P(x,f(x)).
+end_of_list.

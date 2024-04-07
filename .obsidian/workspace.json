@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "89e68583011b2ea3",
+        "id": "77c52dbc361fb492",
         "type": "tabs",
         "children": [
           {
-            "id": "71775b5d24d51599",
+            "id": "2b69c2c882b780b3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "logique_math/cours.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "77a6fee14e7e2432",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "logique_math/TD1.md",
+                "file": "rng/le cours est RNG ?.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "rng/le cours est RNG ?.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "rng/le cours est RNG ?.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "rng/le cours est RNG ?.md"
+              }
             }
           }
         ]
@@ -154,23 +145,29 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "5ca1f63f4cb5ad85",
+  "active": "2b69c2c882b780b3",
   "lastOpenFiles": [
+    "rng/tempCodeRunnerFile.py",
+    "rng/tp1/GNA_TP1_2024.ipynb",
+    "rng/tp1",
+    "rng/speedTests.py",
+    "assembly/CM1.md",
+    "rng/le cours est RNG ?.md",
+    "rng",
+    "assembly",
+    "logique_math/tp1/TP1.md",
+    "logique_math/tp2/exo4.in~",
+    "logique_math/tp2/exo4.in",
+    "logique_math/tp1/exo1.in~",
+    "logique_math/tp2/exo1.in~",
+    "logique_math/tp2/exo1.in",
+    "logique_math/cours.md",
+    "analyse-risque/etude_cas_TIN.md",
     "cpp/CM/CM3.md",
     "english/dream job poster.md",
-    "cpp/CM/exosMem.cpp~",
-    "cpp/CM/output/exosMem",
-    "cpp/CM/exosMem.cpp",
-    "cpp/CM/exosCM3.cpp~",
-    "cm2",
-    "cpp/CM/cm2.cpp~",
-    "cpp/CM/output/exosCM3",
-    "cpp/a.out",
-    "cpp/CM/exosCM3.cpp",
     "Untitled.md",
     "tourcoingTaMere/notes gestion.md",
     "cpp/TD1/Compte rendu TD 1 C++.md",
-    "cpp/TD2/1",
     "Pasted image 20240110174606.png",
     "DGSI.md",
     "cpp/CM/CM2 part 2.md",
@@ -192,10 +189,6 @@
     "IS/deroulement.md",
     "protoCrypto/td pas tp 1/exo2.md.md",
     "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/Untitled.md",
-    "UselessMangetesmortsLanguage/td2/2.md.md",
-    "UselessMangetesmortsLanguage/td2/1.md.md",
-    "protoCrypto/td1/td1.md"
+    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md"
   ]
 }

@@ -48,18 +48,6 @@ public class Controleur {
         }
     }
 
-    public void action() {
-        if (feu.getCouleur() == Couleur.VERT) {
-            if (parking.getPlacesLibres() > 0) {
-                barriereEntree.changeOuverte();
-                parking.addVoiture();
-            }
-        } else {
-            if (parking.getPlacesLibres() < parking.getTaille()) {
-                barriereSortie.changeOuverte();
-                parking.removeVoiture();
-            }
-        }
-    }
+    
     
 }

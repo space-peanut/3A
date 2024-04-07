@@ -1,0 +1,7 @@
+formulas(assumptions).
+all x all y all z ((R(x,y) & R(z,y)) -> R(x,z)).
+all x R(x,x).
+end_of_list.
+formulas(goals).
+all x all y (R(x,y) -> R(y,x)).
+end_of_list.
