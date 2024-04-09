@@ -1,27 +1,358 @@
-# diagramme cas d'Utilisation
+# 
+- Nom du cas : connexion
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
 
-- fournissseur :
-    - ajouter produit
-    - modifier produit[/home/max/Cours/3A/web/td_html/index.html](file:///home/max/Cours/3A/web/td_html/index.html)
-    - supprimer produit
-    - consulter produit
-        - consulter produit autre fournissseur ( --> extends)
-        - afficher stats (--> includes)
-
-- client :
-    - ajouter article dans panier
-        - specifier qtte
-    - acheter panier
-        - se connecter (<-- includes)
-        - valider paiement (<-- includes) <- CME
-    - passer reclamation
-        - remboursement
-        - retour
-
-- admin :
-    - gerer comptes fournissseur
-    - gerer comptes clients
-    - gerer reclamations
-        - demander retour (includes --> retour)
-
-
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
+# 
+- Nom du cas : 
+- Objectif : 
+- Acteurs : 
+- Date : 
+- Responsables : 
+- Version : 1.0
+- Début du cas d’utilisation : 
+	- 
+- Fin du cas d’utilisation : 
+	- 
+- preconditions :
+	- 
+- scenario nominal : 
+	- 
+- post conditions :
+	- 
