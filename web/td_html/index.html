@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+</body>
+<form action="">
+    <fieldset>
+        <legend>Informations personelles</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="nom">Nom</label>
+                </td>
+                <td>
+                    <input type="text" name="nom" id="nom" required> 
+                </td>
+            </tr>
+            <tr>
+                <td><label for="prenom">Prenom</label></td>
+                <td><input type="text" name="prenom" id="prenom" required> </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="tel">Telephone</label>
+                </td>
+                <td>
+                    <input type="tel" name="tel" id="tel"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email</label>
+                </td>
+                <td>
+                    <input type="email" name="email" id="email"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="date_naissance">Date de naissance</label>
+                </td>
+                <td>
+                    <input type="date" name="date_naissance" id="date_naissance" required"> 
+                </td>
+                <td>
+                    <label for="pays">Pays</label>
+                </td>
+                <td>
+                    <select name="pays" id="pays">
+                        <option value="france">France</option>
+                        <option value="senegal">Senegal</option>
+                        <option value="usa">USA</option>
+                        <option value="italie">Italie</option>
+                        <option value="Allemagne">Allemagne</option>
+                    </select>
+                </td>
+            </tr>
+            
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Adresse</legend>
+        <table>
+            <tr>
+                <td>
+                    <label for="rue">Rue</label>
+                </td>
+                <td>
+                    <input type="text" name="rue" id="rue"> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="cp">Code postal</label>
+                </td>
+                <td>
+                    <input type="text" name="cp" id="cp"> 
+                </td>
+                <td>
+                    <label for="ville">Ville</label>
+                </td>
+                <td>
+                    <input type="text" name="ville" id="ville" list="villes">
+                    <datalist id="villes">
+                        <option value="paris">paris</option>
+                        <option value="marseille">marseille</option>
+                        <option value="lyon">lyon</option>
+                        <option value="bordeaux">bordeaux</option>
+                        <option value="lille">lille</option>
+                        <option value="vannes">vannes</option>
+                        <option value="rennes">rennes</option>
+                        <option value="nantes">nantes</option>
+                        <option value="toulouse">toulouse</option>
+                        <option value="montpellier">montpellier</option>
+                        <option value="nice">nice</option>
+                        <option value="cannes">cannes</option>
+                        <option value="strasbourg">strasbourg</option>
+                        <option value="metz">metz</option>
+                        <option value="nancy">nancy</option>
+                        <option value="dijon">dijon</option>
+                        <option value="besancon">besancon</option>
+                        <option value="grenoble">grenoble</option>
+                        <option value="annecy">annecy</option>
+                        <option value="chambery">chambery</option>
+                        <option value="aix-en-provence">aix-en-provence</option>
+                        <option value="avignon">avignon</option>
+                        <option value="perpignan">perpignan</option>
+                        <option value="toulon">toulon</option>
+                        <option value="blois">blois</option>
+                    </datalist>
+                </td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <fieldset>
+        <legend>Sports pratiques</legend>
+        <input type="checkbox" name="sports" id="sports">
+        <label for="sports">Football</label><br>
+        <input type="checkbox" name="sports" id="sports">
+        <label for="sports">Basketball</label><br>
+        <input type="checkbox" name="sports" id="sports">
+        <label for="sports">Tennis</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Status</legend>
+        <input type="radio" name="status" id="status">
+        <label for="status">Celibataire</label><br>
+        <input type="radio" name="status" id="status">
+        <label for="status">Marie</label><br>
+        <input type="radio" name="status" id="status">
+        <label for="status">Divorce</label><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Commentaires</legend>
+        <textarea name="commentaires" id="commentaires" cols="30" rows="10"></textarea>
+    </fieldset>
+    <fieldset>
+        <legend>Joindre un fichier</legend>
+        <input type="file" name="fichier" id="fichier">
+    </fieldset>
+    <center>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Affacer">
+    </center>
+</form>
+</html>

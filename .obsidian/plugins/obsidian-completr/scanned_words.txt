@@ -1228,6 +1228,9 @@ soft
 suprimee
 semantique
 stocke
+supprimer
+stats
+specifier
 BC
 BR
 BitsPerComponent
@@ -1983,6 +1986,9 @@ carra
 conduisant
 contole
 clock
+client
+connecter
+comptes
 SS
 Subtype
 SMask
@@ -2597,6 +2603,9 @@ power
 pointer
 predicat
 propositions
+produit
+panier
+passer
 fg
 fm
 fvr
@@ -2770,6 +2779,7 @@ fukai
 followship
 functions
 fils
+fournissseur
 dg
 dp
 dj
@@ -3111,6 +3121,7 @@ distributions
 dipl
 definit
 decalage
+diagramme
 endstream
 endobj
 ew
@@ -3442,6 +3453,7 @@ efK
 egR
 enyt
 ecologie
+extends
 Type
 TML
 Tc
@@ -4755,6 +4767,8 @@ ClJh
 Cxfq
 Chercher
 Cybersecurite
+CME
+Cours
 DeviceRGB
 DV
 Dk
@@ -5370,6 +5384,8 @@ approche
 adresse
 arythm
 addr
+article
+acheter
 nO
 nr
 nm
@@ -5860,6 +5876,10 @@ ropositionnelle
 rique
 registre
 reels
+reclamation
+remboursement
+retour
+reclamations
 YYk
 YiD
 Yt
@@ -8418,6 +8438,7 @@ hIf
 hdS
 huP
 hardware
+home
 bE
 bY
 bi
@@ -8862,6 +8883,7 @@ valley
 veut
 vite
 vocab
+valider
 Rd
 RX
 Rb
@@ -9310,6 +9332,7 @@ iYq
 informatique
 informatiques
 ing
+includes
 Oz
 OJ
 OG
@@ -10865,6 +10888,7 @@ gjM
 gVX
 gRz
 gates
+gerer
 ql
 qK
 qr
@@ -11158,6 +11182,7 @@ quoi
 quels
 quelles
 quelle
+qtte
 xK
 xG
 xU
@@ -11739,6 +11764,7 @@ maintenant
 machine
 multivalentes
 motivations
+modifier
 GK
 GO
 GH

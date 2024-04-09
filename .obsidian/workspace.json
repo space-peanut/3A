@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rng/le cours est RNG ?.md",
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rng/le cours est RNG ?.md",
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rng/le cours est RNG ?.md",
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rng/le cours est RNG ?.md"
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md"
               }
             }
           }
@@ -147,20 +147,20 @@
   },
   "active": "2b69c2c882b780b3",
   "lastOpenFiles": [
-    "rng/tempCodeRunnerFile.py",
-    "rng/tp1/GNA_TP1_2024.ipynb",
-    "rng/tp1",
-    "rng/speedTests.py",
-    "assembly/CM1.md",
+    "assembly/HelloWorld/make.bat",
+    "assembly/HelloWorld/HelloWorld.obj",
+    "assembly/HelloWorld/HelloWorld.exe",
+    "assembly/HelloWorld/HelloWorld.asm",
+    "assembly/HelloWorld",
+    "assembly/tp/uppercase.asm",
+    "assembly/tp",
+    "web/td_html/villes_france.csv",
+    "web/td_html/index.html",
+    "web/td_html",
+    "web",
     "rng/le cours est RNG ?.md",
-    "rng",
-    "assembly",
+    "assembly/CM1.md",
     "logique_math/tp1/TP1.md",
-    "logique_math/tp2/exo4.in~",
-    "logique_math/tp2/exo4.in",
-    "logique_math/tp1/exo1.in~",
-    "logique_math/tp2/exo1.in~",
-    "logique_math/tp2/exo1.in",
     "logique_math/cours.md",
     "analyse-risque/etude_cas_TIN.md",
     "cpp/CM/CM3.md",

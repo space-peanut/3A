@@ -2,7 +2,7 @@
 
 - fournissseur :
     - ajouter produit
-    - modifier produit
+    - modifier produit[/home/max/Cours/3A/web/td_html/index.html](file:///home/max/Cours/3A/web/td_html/index.html)
     - supprimer produit
     - consulter produit
         - consulter produit autre fournissseur ( --> extends)
