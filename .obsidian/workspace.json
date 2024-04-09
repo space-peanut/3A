@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "8ad2184dc9d39838",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Untitled.md",
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md"
+                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md"
               }
             }
           }
@@ -146,8 +159,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "230a8c438a669f41",
+  "active": "8ad2184dc9d39838",
   "lastOpenFiles": [
+    "english/hannats/fumo/VID20240319224729.mp4",
+    "english/hannats/fumo/VID20240319224729-30fps.mp4",
+    "english/hannats/fumo/VID20240228183055.mp4",
+    "english/hannats/fumo/VID20240228182929.mp4",
+    "english/hannats/fumo/VID20240228182929-30fps.mp4",
     "listeReco.md",
     "DGSI.md"
   ]

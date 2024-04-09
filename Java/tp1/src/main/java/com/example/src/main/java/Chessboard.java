@@ -5,7 +5,7 @@ public class Chessboard {
 
     public Chessboard() {
         createBoard(8);
-        for(int i=0,i<=7,i++){
+        for(int i=0;i<=7;i++){
             addPiece(new Piece(PieceName.PAWN,PieceColor.white,i,6));
             addPiece(new Piece(PieceName.PAWN,PieceColor.black,i,1));   
         }
