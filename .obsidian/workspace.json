@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
+                "file": "rng/le-cours-est-RNG-!.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
+                "file": "rng/le-cours-est-RNG-!.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
+                "file": "rng/le-cours-est-RNG-!.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md"
+                "file": "rng/le-cours-est-RNG-!.md"
               }
             }
           }
@@ -147,8 +147,8 @@
   },
   "active": "2b69c2c882b780b3",
   "lastOpenFiles": [
-    "rng/le-cours-est-RNG ?.md",
     "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
+    "rng/le-cours-est-RNG-!.md",
     "assembly/HelloWorld/make.bat",
     "assembly/HelloWorld/HelloWorld.obj",
     "assembly/HelloWorld/HelloWorld.exe",
