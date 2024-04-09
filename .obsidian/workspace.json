@@ -1,19 +1,19 @@
 {
   "main": {
-    "id": "1350521cd2ae4230",
+    "id": "6d6fe98e54639859",
     "type": "split",
     "children": [
       {
-        "id": "77c52dbc361fb492",
+        "id": "2c7a8fd5bb4b1009",
         "type": "tabs",
         "children": [
           {
-            "id": "2b69c2c882b780b3",
+            "id": "230a8c438a669f41",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "rng/le-cours-est-RNG-!.md",
+                "file": "Untitled.md",
                 "mode": "source",
                 "source": false
               }
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "3a12de230f3a44ff",
+    "id": "cbe65a394d503653",
     "type": "split",
     "children": [
       {
-        "id": "96d1ef85ce631d4a",
+        "id": "c2b3dd63e2a1539b",
         "type": "tabs",
         "children": [
           {
-            "id": "5ca1f63f4cb5ad85",
+            "id": "741587cdc52b0d76",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "432862948ce7716f",
+            "id": "68adb6321a8e82d6",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "970e8f9887cabaab",
+            "id": "24695f66af27eab4",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -69,24 +69,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "30ce5f4cd0d6562e",
+    "id": "ee31d161f9eee9ef",
     "type": "split",
     "children": [
       {
-        "id": "51fcd3b905c73f3f",
+        "id": "0847babf2e947193",
         "type": "tabs",
         "children": [
           {
-            "id": "95f5121ce4c957e1",
+            "id": "b581b8174893e401",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rng/le-cours-est-RNG-!.md",
-                "file": "logique_math/cours.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -98,20 +97,19 @@
             }
           },
           {
-            "id": "277d9ebddb6989e6",
+            "id": "e990fc5b94b7e668",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rng/le-cours-est-RNG-!.md",
-                "file": "logique_math/cours.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "750fc1e445c91230",
+            "id": "90fd1f750260ce29",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -122,14 +120,12 @@
             }
           },
           {
-            "id": "0fa0fdb503def49b",
+            "id": "ab1c33846fb85d77",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "rng/le-cours-est-RNG-!.md"
-              
-                "file": "logique_math/cours.md"
+                "file": "Untitled.md"
               }
             }
           }
@@ -137,7 +133,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,265 +146,9 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "2b69c2c882b780b3",
+  "active": "230a8c438a669f41",
   "lastOpenFiles": [
-    "UselessMangetesmortsLanguage/2ndprojetdemerde/gne.md",
-    "rng/le-cours-est-RNG-!.md",
-    "assembly/HelloWorld/make.bat",
-    "assembly/HelloWorld/HelloWorld.obj",
-    "assembly/HelloWorld/HelloWorld.exe",
-    "assembly/HelloWorld/HelloWorld.asm",
-    "assembly/HelloWorld",
-    "assembly/tp/uppercase.asm",
-    "assembly/tp",
-    "web/td_html/villes_france.csv",
-    "web/td_html/index.html",
-    "web/td_html",
-    "assembly/CM1.md",
-    "logique_math/tp1/TP1.md",
-    "logique_math/cours.md",
-    "analyse-risque/etude_cas_TIN.md",
-    "logique_math/cours.md",
-    "logique_math/TD1.md",
-    "maths/sageMath.md",
-    "logique_math",
-    "Pasted image 20240110174606.png",
-    "maths",
-    "cpp/CM/CM3.md",
-    "english/dream job poster.md",
-    "cpp/CM/exosMem.cpp~",
-    "cpp/CM/output/exosMem",
-    "cpp/CM/exosMem.cpp",
-    "cpp/CM/exosCM3.cpp~",
-    "cm2",
-    "cpp/CM/cm2.cpp~",
-    "cpp/CM/output/exosCM3",
-    "cpp/a.out",
-    "Untitled.md",
-    "tourcoingTaMere/notes gestion.md",
-    "cpp/TD1/Compte rendu TD 1 C++.md",
-    "DGSI.md",
-    "cpp/CM/CM2 part 2.md",
-    "cpp/CM/CM2.md",
-    "cpp/CM/CM2 exo1.md",
-    "tourcoing/Untitled.md",
-    "english/gerund vs inf.md",
-    "english/MA/magoyond.jpg",
-    "english/MA/background-main6.png",
-    "english/MA/background-main6.webp",
-    "english/MA/background-main6.jpg",
-    "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
-    "english/MA/thanks.png",
-    "english/MA/magnificent_Anglais_Ma_makes_the_life.jpg",
-    "english/MA/NECROPOLIS.jpg",
-    "english/MA/KRIPTSHOW.png",
-    "Progr/projet/Compte Rendu.md",
-    "OS/Memento Widows.md",
-    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/tdpastp1/exo2.md",
-    "Progr/l'autreCoursLa.md",
-    "Progr/l'autreCoursla/l'autreCoursLa.md",
-    "IS/deroulement.md",
-    "protoCrypto/td pas tp 1/exo2.md.md",
-    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/Untitled.md",
-    "UselessMangetesmortsLanguage/td2/2.md.md"
-  ]
-}{
-  "main": {
-    "id": "1350521cd2ae4230",
-    "type": "split",
-    "children": [
-      {
-        "id": "89e68583011b2ea3",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "71775b5d24d51599",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ikiga-de-ses-grands-morts/ikigai.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "vertical"
-  },
-  "left": {
-    "id": "3a12de230f3a44ff",
-    "type": "split",
-    "children": [
-      {
-        "id": "96d1ef85ce631d4a",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "5ca1f63f4cb5ad85",
-            "type": "leaf",
-            "state": {
-              "type": "file-explorer",
-              "state": {
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "432862948ce7716f",
-            "type": "leaf",
-            "state": {
-              "type": "search",
-              "state": {
-                "query": "",
-                "matchingCase": false,
-                "explainSearch": false,
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical"
-              }
-            }
-          },
-          {
-            "id": "970e8f9887cabaab",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {}
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 200
-  },
-  "right": {
-    "id": "30ce5f4cd0d6562e",
-    "type": "split",
-    "children": [
-      {
-        "id": "51fcd3b905c73f3f",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "95f5121ce4c957e1",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "ikiga-de-ses-grands-morts/ikigai.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "277d9ebddb6989e6",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "ikiga-de-ses-grands-morts/ikigai.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "750fc1e445c91230",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true
-              }
-            }
-          },
-          {
-            "id": "0fa0fdb503def49b",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "ikiga-de-ses-grands-morts/ikigai.md"
-              }
-            }
-          }
-        ]
-      }
-    ],
-    "direction": "horizontal",
-    "width": 200
-  },
-  "left-ribbon": {
-    "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false
-    }
-  },
-  "active": "71775b5d24d51599",
-  "lastOpenFiles": [
-    "ikiga-de-ses-grands-morts/ikigai MaximeSoulie.pdf",
-    "OS/Memento Widows.md",
-    "ikiga-de-ses-grands-morts/ikigai.md",
-    "IOT/10DHT11.mp4",
-    "ikiga-de-ses-grands-morts/Lettre motivation maxime soulie.pdf",
-    "ikiga-de-ses-grands-morts/lu2196424u08.tmp",
-    "ikiga-de-ses-grands-morts/offre.png",
-    "ikiga-de-ses-grands-morts/Capture d’écran 2024-03-04 151454.png",
-    "Pasted image 20240304151337.png",
-    "Offre d'emploi Développement logiciel pour l’analyse de traces d’exécutions F_H Rennes, 35, Ille-et-Vilaine, Bretagne - ANSSI - Agence nationale de la sécurité des systèmes d'information.pdf",
-    "cpp/CM/CM3.md",
-    "english/dream job poster.md",
-    "cpp/CM/exosMem.cpp~",
-    "cpp/CM/output/exosMem",
-    "cpp/CM/exosMem.cpp",
-    "cpp/CM/exosCM3.cpp~",
-    "cm2",
-    "cpp/CM/cm2.cpp~",
-    "Untitled.md",
-    "tourcoingTaMere/notes gestion.md",
-    "cpp/TD1/Compte rendu TD 1 C++.md",
-    "Pasted image 20240110174606.png",
-    "DGSI.md",
-    "cpp/CM/CM2 part 2.md",
-    "cpp/CM/CM2.md",
-    "cpp/CM/CM2 exo1.md",
-    "tourcoing/Untitled.md",
-    "english/gerund vs inf.md",
-    "english/MA/magoyond.jpg",
-    "english/MA/background-main6.png",
-    "english/MA/background-main6.webp",
-    "english/MA/background-main6.jpg",
-    "english/MA/DIGI-Necropolis-MAGOYOND-V2.jpg",
-    "english/MA/thanks.png",
-    "Progr/projet/Compte Rendu.md",
-    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/tdpastp1/exo2.md",
-    "Progr/l'autreCoursLa.md",
-    "Progr/l'autreCoursla/l'autreCoursLa.md",
-    "IS/deroulement.md",
-    "protoCrypto/td pas tp 1/exo2.md.md",
-    "protoCrypto/tdpastp1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/td pas tp 1/Série_d’exercices _du_module_protocoles_cryptographiques.md.md",
-    "protoCrypto/Untitled.md",
-    "UselessMangetesmortsLanguage/td2/2.md.md",
-    "UselessMangetesmortsLanguage/td2/1.md.md"
+    "listeReco.md",
+    "DGSI.md"
   ]
 }

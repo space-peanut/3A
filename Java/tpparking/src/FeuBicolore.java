@@ -16,6 +16,8 @@ public class FeuBicolore {
         assert this.couleur == Couleur.ROUGE;
     }
 
+    
+
     /**
      * Change la couleur du feu
      * @return la couleru du feu

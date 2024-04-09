@@ -6,10 +6,11 @@ public class Controleur {
     private Parking parking;
 
     public Controleur(int tailleParking) {
+        this.parking = new Parking(tailleParking);
         this.feu = new FeuBicolore();
         this.barriereEntree = new Barriere("Entree");
         this.barriereSortie = new Barriere("Sortie");
-        this.parking = new Parking(tailleParking);
+        setCouleurfeu();
     }
 
     public Couleur getCouleurFeu() {
@@ -40,6 +41,18 @@ public class Controleur {
         }
     }
 
+    public void closeBarriereEntree() {
+        barriereEntree.fermer();
+    }
+
+    public void openBarriereSortie() {
+        barriereSortie.ouvrir();
+    }
+
+    public void closeBarriereSortie() {
+        barriereSortie.fermer();
+    }
+
     public void setCouleurfeu(){
         if(getPlacesLibres()==0){
             feu.setCouleur(Couleur.ROUGE);
@@ -48,6 +61,24 @@ public class Controleur {
         }
     }
 
-    
+    public void entrerParking() {
+        if(feu.getCouleur() == Couleur.VERT){
+            openBarriereEntree();
+            parking.addVoiture();
+            closeBarriereEntree();
+        } else {
+            System.out.println("parking plein");
+        }
+    }
+
+    public void sortirParking() {
+        if (parking.getPlacesLibres() != parking.getTaille()){
+            openBarriereSortie();
+            parking.removeVoiture();
+            closeBarriereSortie();    
+        } else {
+            parking.removeVoiture();
+        }
+    }
     
 }

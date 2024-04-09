@@ -7,23 +7,25 @@ public class Parking {
         this.placesLibres = taille;
     }
 
-    protected int getPlacesLibres() {
+    public int getPlacesLibres() {
         return placesLibres;
     }
 
-    protected int getTaille() {
+    public int getTaille() {
         return taille;
     }
 
-    protected void addVoiture() {
+    public void addVoiture() {
         if (placesLibres > 0) {
             placesLibres--;
             System.out.println("Une voiture est rentrée dans le parking");
         } else {
             System.out.println("Le parking est plein");
-        }
 
-    protected void removeVoiture() {
+        }
+    }
+
+    public void removeVoiture() {
         if (placesLibres < taille) {
             placesLibres++;
             System.out.println("Une voiture est sortie du parking");
