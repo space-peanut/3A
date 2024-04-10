@@ -1,6 +1,6 @@
 formulas(assumptions).
-for x P(x,x).
-for x for y(P(x,y)->P(y,x)).
+all x P(x,x).
+all x all y(P(x,y)->P(y,x)).
 formulas(goals).
-for x for y for z (P(x,y) & P(y,z) -> P(x,z)).
+all x all y all z (P(x,y) & P(y,z) -> P(x,z)).
 end_of_list.
