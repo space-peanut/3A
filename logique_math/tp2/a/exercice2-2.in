@@ -1,0 +1,6 @@
+formulas(assumptions).
+for x P(x,x).
+for x for y(P(x,y)->P(y,x)).
+formulas(goals).
+for x for y for z (P(x,y) & P(y,z) -> P(x,z)).
+end_of_list.

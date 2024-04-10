@@ -1,0 +1,12 @@
+set(binary_resolution).
+clear(print_initial_clauses).
+clear(print_kept).
+clear(print_given).
+assign(max_seconds,10).
+assign(stats,none).
+
+formulas(assumptions).
+end_of_list.
+formulas(goals).
+-(-p | -(-q -> r)).
+end_of_list.

@@ -1,0 +1,10 @@
+formulas(assumptions).
+all A all B (subset(A,B) <-> all z (member(z,A) -> member(z,B))).
+all A all B (A = B <-> all z (element(z,A) <-> element(z,B))).
+end_of_list.
+formulas(goals).
+%all A subset(A,A).
+%all A all B (subset(A,B) & subset(B,A) -> A = B).
+all A all B all C subset(A,B) & subset(B,C) -> subset(A,C).
+end_of_list.
+

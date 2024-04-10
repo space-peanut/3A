@@ -1,0 +1,8 @@
+formulas(assumptions).
+all x all y (A(x,y) -> C(x,y)).
+all x all y (( exists z(C(x,z) & A(z,y))) -> C(x,y)).
+-(exists x C(x,x)).
+end_of_list.
+formulas(goals).
+all x all y (-A(x,y)) | (-A(y,x)).
+end_of_list.
