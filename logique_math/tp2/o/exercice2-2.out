@@ -1,0 +1,18 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4767 was started by alan on julien777hx,
+Wed Apr 10 14:53:07 2024
+The command was "prover9 -f exercice2-2.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice2-2.in
+
+%%ERROR: A term cannot be constructed from the marked string:
+
+
+%%START ERROR%%for x P(x,x).%%END ERROR%%
+
+Fatal error:  sread_term error
+

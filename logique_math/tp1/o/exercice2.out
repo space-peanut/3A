@@ -1,0 +1,100 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4052 was started by alan on julien777hx,
+Wed Apr 10 14:48:48 2024
+The command was "prover9 -f exercice2.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice2.in
+
+set(binary_resolution).
+clear(print_initial_clauses).
+clear(print_kept).
+clear(print_given).
+assign(max_seconds,10).
+assign(stats,none).
+
+formulas(assumptions).
+(d -> f) & (c | d & -f).
+d & a.
+end_of_list.
+
+formulas(goals).
+a & (b -> c).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 (d -> f) & (c | d & -f) # label(non_clause).  [assumption].
+2 d & a # label(non_clause).  [assumption].
+3 a & (b -> c) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (non-Horn, no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ d, a, c, f, b ]).
+Function symbol precedence:  function_order([ ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(binary_resolution).  % (non-Horn)
+  % set(neg_ur_resolution).  % (non-Horn, less than 100 clauses)
+
+Auto_process settings:
+  % set(factor).  % (non-Horn)
+  % set(unit_deletion).  % (non-Horn)
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 11.
+% Level of proof is 3.
+% Maximum clause weight is 2.000.
+% Given clauses 0.
+
+1 (d -> f) & (c | d & -f) # label(non_clause).  [assumption].
+2 d & a # label(non_clause).  [assumption].
+3 a & (b -> c) # label(non_clause) # label(goal).  [goal].
+4 -d | f.  [clausify(1)].
+6 c | -f.  [clausify(1)].
+7 d.  [clausify(2)].
+8 a.  [clausify(2)].
+11 -a | -c.  [deny(3)].
+12 -c.  [copy(11),unit_del(a,8)].
+13 f.  [back_unit_del(4),unit_del(a,7)].
+14 $F.  [back_unit_del(6),unit_del(a,12),unit_del(b,13)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=0. Generated=9. Kept=8. proofs=1.
+Usable=0. Sos=3. Demods=0. Limbo=2, Disabled=10. Hints=0.
+Megabytes=0.03.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+Process 4052 exit (max_proofs) Wed Apr 10 14:48:48 2024

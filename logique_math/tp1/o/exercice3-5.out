@@ -1,0 +1,102 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4147 was started by alan on julien777hx,
+Wed Apr 10 14:49:38 2024
+The command was "prover9 -f exercice3-5.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice3-5.in
+
+set(binary_resolution).
+clear(print_initial_clauses).
+clear(print_kept).
+clear(print_given).
+assign(max_seconds,10).
+assign(stats,none).
+
+formulas(assumptions).
+p -> q.
+-p -> r.
+-q -> -r.
+end_of_list.
+
+formulas(goals).
+q.
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 p -> q # label(non_clause).  [assumption].
+2 -p -> r # label(non_clause).  [assumption].
+3 -q -> -r # label(non_clause).  [assumption].
+4 q # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (non-Horn, no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ p, q, r ]).
+Function symbol precedence:  function_order([ ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(binary_resolution).  % (non-Horn)
+  % set(neg_ur_resolution).  % (non-Horn, less than 100 clauses)
+
+Auto_process settings:
+  % set(factor).  % (non-Horn)
+  % set(unit_deletion).  % (non-Horn)
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 11.
+% Level of proof is 3.
+% Maximum clause weight is 2.000.
+% Given clauses 0.
+
+1 p -> q # label(non_clause).  [assumption].
+2 -p -> r # label(non_clause).  [assumption].
+3 -q -> -r # label(non_clause).  [assumption].
+4 q # label(non_clause) # label(goal).  [goal].
+5 -p | q.  [clausify(1)].
+6 p | r.  [clausify(2)].
+7 q | -r.  [clausify(3)].
+8 -q.  [deny(4)].
+9 -r.  [back_unit_del(7),unit_del(a,8)].
+10 -p.  [back_unit_del(5),unit_del(b,8)].
+11 $F.  [back_unit_del(6),unit_del(a,10),unit_del(b,9)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=0. Generated=7. Kept=6. proofs=1.
+Usable=0. Sos=1. Demods=0. Limbo=2, Disabled=7. Hints=0.
+Megabytes=0.03.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+Process 4147 exit (max_proofs) Wed Apr 10 14:49:38 2024

@@ -1,0 +1,151 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4694 was started by alan on julien777hx,
+Wed Apr 10 14:52:45 2024
+The command was "prover9 -f exercice1.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice1.in
+
+
+formulas(assumptions).
+(all x all y all z (R(x,y) & R(z,y) -> R(x,z))).
+(all x R(x,x)).
+end_of_list.
+
+formulas(goals).
+(all x all y (R(x,y) -> R(y,x))).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 (all x all y all z (R(x,y) & R(z,y) -> R(x,z))) # label(non_clause).  [assumption].
+2 (all x R(x,x)) # label(non_clause).  [assumption].
+3 (all x all y (R(x,y) -> R(y,x))) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+-R(x,y) | -R(z,y) | R(x,z).  [clausify(1)].
+R(x,x).  [clausify(2)].
+R(c1,c2).  [deny(3)].
+-R(c2,c1).  [deny(3)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ R ]).
+Function symbol precedence:  function_order([ c1, c2 ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(neg_binary_resolution).  % (HNE depth_diff=0)
+  % clear(ordered_res).  % (HNE depth_diff=0)
+  % set(ur_resolution).  % (HNE depth_diff=0)
+    % set(ur_resolution) -> set(pos_ur_resolution).
+    % set(ur_resolution) -> set(neg_ur_resolution).
+
+Auto_process settings:  (no changes).
+
+kept:      4 -R(x,y) | -R(z,y) | R(x,z).  [clausify(1)].
+kept:      5 R(x,x).  [clausify(2)].
+kept:      6 R(c1,c2).  [deny(3)].
+kept:      7 -R(c2,c1).  [deny(3)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+4 -R(x,y) | -R(z,y) | R(x,z).  [clausify(1)].
+5 R(x,x).  [clausify(2)].
+6 R(c1,c2).  [deny(3)].
+7 -R(c2,c1).  [deny(3)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+given #1 (I,wt=9): 4 -R(x,y) | -R(z,y) | R(x,z).  [clausify(1)].
+
+given #2 (I,wt=3): 5 R(x,x).  [clausify(2)].
+
+given #3 (I,wt=3): 6 R(c1,c2).  [deny(3)].
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 9.
+% Level of proof is 3.
+% Maximum clause weight is 9.000.
+% Given clauses 3.
+
+1 (all x all y all z (R(x,y) & R(z,y) -> R(x,z))) # label(non_clause).  [assumption].
+2 (all x R(x,x)) # label(non_clause).  [assumption].
+3 (all x all y (R(x,y) -> R(y,x))) # label(non_clause) # label(goal).  [goal].
+4 -R(x,y) | -R(z,y) | R(x,z).  [clausify(1)].
+5 R(x,x).  [clausify(2)].
+6 R(c1,c2).  [deny(3)].
+7 -R(c2,c1).  [deny(3)].
+8 R(c2,c1).  [ur(4,a,5,a,b,6,a)].
+9 $F.  [resolve(8,a,7,a)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=3. Generated=8. Kept=5. proofs=1.
+Usable=3. Sos=1. Demods=0. Limbo=0, Disabled=4. Hints=0.
+Kept_by_rule=0, Deleted_by_rule=0.
+Forward_subsumed=3. Back_subsumed=0.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=2.
+Megabytes=0.04.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+Process 4694 exit (max_proofs) Wed Apr 10 14:52:45 2024

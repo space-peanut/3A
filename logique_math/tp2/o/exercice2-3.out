@@ -1,0 +1,134 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4775 was started by alan on julien777hx,
+Wed Apr 10 14:53:15 2024
+The command was "prover9 -f exercice2-3.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice2-3.in
+
+
+formulas(assumptions).
+(all x all y all z (P(x,y) & P(y,z) -> P(x,z))).
+(all x all y (P(x,y) -> P(y,x))).
+end_of_list.
+
+formulas(goals).
+(all x P(x,x)).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 (all x all y all z (P(x,y) & P(y,z) -> P(x,z))) # label(non_clause).  [assumption].
+2 (all x all y (P(x,y) -> P(y,x))) # label(non_clause).  [assumption].
+3 (all x P(x,x)) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+-P(x,y) | -P(y,z) | P(x,z).  [clausify(1)].
+-P(x,y) | P(y,x).  [clausify(2)].
+-P(c1,c1).  [deny(3)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ P ]).
+Function symbol precedence:  function_order([ c1 ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(neg_binary_resolution).  % (HNE depth_diff=0)
+  % clear(ordered_res).  % (HNE depth_diff=0)
+  % set(ur_resolution).  % (HNE depth_diff=0)
+    % set(ur_resolution) -> set(pos_ur_resolution).
+    % set(ur_resolution) -> set(neg_ur_resolution).
+
+Auto_process settings:  (no changes).
+
+kept:      4 -P(x,y) | -P(y,z) | P(x,z).  [clausify(1)].
+kept:      5 -P(x,y) | P(y,x).  [clausify(2)].
+kept:      6 -P(c1,c1).  [deny(3)].
+
+============================== end of process initial clauses ========
+
+============================== CLAUSES FOR SEARCH ====================
+
+% Clauses after input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+4 -P(x,y) | -P(y,z) | P(x,z).  [clausify(1)].
+5 -P(x,y) | P(y,x).  [clausify(2)].
+6 -P(c1,c1).  [deny(3)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== end of clauses for search =============
+
+============================== SEARCH ================================
+
+% Starting search at 0.00 seconds.
+
+given #1 (I,wt=9): 4 -P(x,y) | -P(y,z) | P(x,z).  [clausify(1)].
+
+given #2 (I,wt=6): 5 -P(x,y) | P(y,x).  [clausify(2)].
+
+given #3 (I,wt=3): 6 -P(c1,c1).  [deny(3)].
+
+given #4 (A,wt=6): 7 -P(c1,x) | -P(x,c1).  [resolve(6,a,4,c)].
+
+given #5 (F,wt=3): 8 -P(x,c1).  [resolve(7,a,5,b),merge(b)].
+
+given #6 (F,wt=3): 9 -P(c1,x).  [resolve(7,b,5,b),merge(b)].
+
+============================== STATISTICS ============================
+
+Given=6. Generated=16. Kept=6. proofs=0.
+Usable=4. Sos=0. Demods=0. Limbo=0, Disabled=5. Hints=0.
+Kept_by_rule=0, Deleted_by_rule=0.
+Forward_subsumed=10. Back_subsumed=2.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=0. Nonunit_bsub_feature_tests=5.
+Megabytes=0.03.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+SEARCH FAILED
+
+Exiting with failure.
+
+Process 4775 exit (sos_empty) Wed Apr 10 14:53:15 2024

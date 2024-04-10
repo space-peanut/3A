@@ -1,0 +1,126 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4827 was started by alan on julien777hx,
+Wed Apr 10 14:53:49 2024
+The command was "prover9 -f exercice4.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice4.in
+
+
+formulas(assumptions).
+(all A all B (subset(A,B) <-> (all z (member(z,A) -> member(z,B))))).
+(all A all B (A = B <-> (all z (element(z,A) <-> element(z,B))))).
+end_of_list.
+
+formulas(goals).
+(all A all B all C subset(A,B)) & subset(B,C) -> subset(A,C).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+1 (all A all B (subset(A,B) <-> (all z (member(z,A) -> member(z,B))))) # label(non_clause).  [assumption].
+2 (all A all B (A = B <-> (all z (element(z,A) <-> element(z,B))))) # label(non_clause).  [assumption].
+3 (all A all B all C subset(A,B)) & subset(B,C) -> subset(A,C) # label(non_clause) # label(goal).  [goal].
+
+============================== end of process non-clausal formulas ===
+
+============================== PROCESS INITIAL CLAUSES ===============
+
+% Clauses before input processing:
+
+formulas(usable).
+end_of_list.
+
+formulas(sos).
+-subset(x,y) | -member(z,x) | member(z,y).  [clausify(1)].
+subset(x,y) | member(f1(x,y),x).  [clausify(1)].
+subset(x,y) | -member(f1(x,y),y).  [clausify(1)].
+x != y | -element(z,y) | element(z,x).  [clausify(2)].
+x != y | element(z,y) | -element(z,x).  [clausify(2)].
+x = y | element(f2(y,x),y) | element(f2(y,x),x).  [clausify(2)].
+x = y | -element(f2(y,x),y) | -element(f2(y,x),x).  [clausify(2)].
+subset(x,y).  [deny(3)].
+subset(B,C).  [deny(3)].
+-subset(A,C).  [deny(3)].
+end_of_list.
+
+formulas(demodulators).
+end_of_list.
+
+============================== PREDICATE ELIMINATION =================
+
+No predicates eliminated.
+
+============================== end predicate elimination =============
+
+Auto_denials:  (non-Horn, no changes).
+
+Term ordering decisions:
+Predicate symbol precedence:  predicate_order([ =, element, subset, member ]).
+Function symbol precedence:  function_order([ B, C, A, f1, f2 ]).
+After inverse_order:  (no changes).
+Unfolding symbols: (none).
+
+Auto_inference settings:
+  % set(paramodulation).  % (positive equality literals)
+  % set(binary_resolution).  % (non-Horn)
+  % set(neg_ur_resolution).  % (non-Horn, less than 100 clauses)
+
+Auto_process settings:
+  % set(factor).  % (non-Horn)
+  % set(unit_deletion).  % (non-Horn)
+
+kept:      4 -subset(x,y) | -member(z,x) | member(z,y).  [clausify(1)].
+kept:      5 subset(x,y) | member(f1(x,y),x).  [clausify(1)].
+kept:      6 subset(x,y) | -member(f1(x,y),y).  [clausify(1)].
+kept:      7 x != y | -element(z,y) | element(z,x).  [clausify(2)].
+kept:      8 x != y | element(z,y) | -element(z,x).  [clausify(2)].
+kept:      9 x = y | element(f2(y,x),y) | element(f2(y,x),x).  [clausify(2)].
+kept:      10 x = y | -element(f2(y,x),y) | -element(f2(y,x),x).  [clausify(2)].
+kept:      11 subset(x,y).  [deny(3)].
+           12 -subset(A,C).  [deny(3)].
+
+============================== PROOF =================================
+
+% Proof 1 at 0.00 (+ 0.00) seconds.
+% Length of proof is 4.
+% Level of proof is 2.
+% Maximum clause weight is 3.000.
+% Given clauses 0.
+
+3 (all A all B all C subset(A,B)) & subset(B,C) -> subset(A,C) # label(non_clause) # label(goal).  [goal].
+11 subset(x,y).  [deny(3)].
+12 -subset(A,C).  [deny(3)].
+13 $F.  [copy(12),unit_del(a,11)].
+
+============================== end of proof ==========================
+
+============================== STATISTICS ============================
+
+Given=0. Generated=10. Kept=8. proofs=1.
+Usable=0. Sos=0. Demods=0. Limbo=8, Disabled=10. Hints=0.
+Kept_by_rule=0, Deleted_by_rule=0.
+Forward_subsumed=1. Back_subsumed=0.
+Sos_limit_deleted=0. Sos_displaced=0. Sos_removed=0.
+New_demodulators=0 (0 lex), Back_demodulated=0. Back_unit_deleted=0.
+Demod_attempts=0. Demod_rewrites=0.
+Res_instance_prunes=0. Para_instance_prunes=0. Basic_paramod_prunes=0.
+Nonunit_fsub_feature_tests=1. Nonunit_bsub_feature_tests=0.
+Megabytes=0.04.
+User_CPU=0.00, System_CPU=0.00, Wall_clock=0.
+
+============================== end of statistics =====================
+
+============================== end of search =========================
+
+THEOREM PROVED
+
+Exiting with 1 proof.
+
+Process 4827 exit (max_proofs) Wed Apr 10 14:53:49 2024

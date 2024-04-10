@@ -1,0 +1,35 @@
+============================== Prover9 ===============================
+Prover9 (64) version 2009-11A, November 2009.
+Process 4802 was started by alan on julien777hx,
+Wed Apr 10 14:53:36 2024
+The command was "prover9 -f exercice2-4.in".
+============================== end of head ===========================
+
+============================== INPUT =================================
+
+% Reading from file exercice2-4.in
+
+
+formulas(assumptions).
+end_of_list.
+
+formulas(goals).
+(all x all y (P(x,y) -> P(y,x))).
+(all x all y all z (P(x,y) & P(y,z) -> P(x,z))).
+(all x P(x,x)).
+end_of_list.
+
+============================== end of input ==========================
+
+============================== PROCESS NON-CLAUSAL FORMULAS ==========
+
+% Formulas that are not ordinary clauses:
+
+%%ERROR: If there are multiple goals, all must be positive:
+
+%%START ERROR%%
+(all x all y (P(x,y) -> P(y,x))).
+%%END ERROR%%
+
+Fatal error:  If there are multiple goals, all must be positive
+
