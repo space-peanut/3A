@@ -21347,6 +21347,33 @@
 					]
 				}
 			]
+		},
+		{
+			"_type": "UMLStateMachine",
+			"_id": "AAAAAAGOyOmsHbRaUR0=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "StateMachine1",
+			"ownedElements": [
+				{
+					"_type": "UMLStatechartDiagram",
+					"_id": "AAAAAAGOyOmsHbRc3/4=",
+					"_parent": {
+						"$ref": "AAAAAAGOyOmsHbRaUR0="
+					},
+					"name": "StatechartDiagram1"
+				}
+			],
+			"regions": [
+				{
+					"_type": "UMLRegion",
+					"_id": "AAAAAAGOyOmsHbRbHwg=",
+					"_parent": {
+						"$ref": "AAAAAAGOyOmsHbRaUR0="
+					}
+				}
+			]
 		}
 	]
 }

@@ -1,4 +1,3 @@
- 
 # Nom du cas : connexion
 - Objectif : permet a un utilisateur de se connecter
 - Acteurs : utilisateur
