@@ -15,15 +15,28 @@ includelib c:\masm32\lib\user32.lib
 includelib c:\masm32\lib\msvcrt.lib
 
 .data
+res db "%d"
 strCommand db "Pause",13,10,0
 
 .data?
 
 .code
 start: 
+  mov ax, 10
+  mov bx, ax
 
-  call crt_scanf
+  push ax
+  push bx
+  div ax,bx
+  
+  push offset res
   call crt_printf
+
+  mov eax, 0
+  mov ebx, 0
+		invoke crt_system, offset strCommand
+    invoke ExitProcess, eax
+
 
 end start
 
