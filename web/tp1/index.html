@@ -13,39 +13,44 @@
             <img src="assets/logo.png" alt="ENSIBS logo" id="logo">
             <h1>Ecolde d'ingenieur</h1>
         </span>
-        <nav class="inline shadowed">
-            <p id="nav-left">carnet de mission</p>
+        <nav class="inline">
+            <p id="nav-left">Carnet de mission</p>
             <ul class="navbar">
-                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Accueil</a></li>
-                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Blog</a></li>
-                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">CV</a></li>
-                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Contact</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w" target="_blank">Accueil</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w" target="_blank">Blog</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w" target="_blank">CV</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <div id="article">
+
+    <div id="article" class="shadowed">
         <div id="whitebg">
             <h4 id="article-title">Recrutement 2022 - 2023 ...</h4>
-            <button class="article-right">Voir l'article</button>
+            <form action="assets/LTG.png">
+                <button type="submit" class="article-right">Voir l'article</button>
+            </form>
         </div>
     </div>
+
     <hr>
-    <span class="main-body">
+    
+    <span class="inline" id="main-body">
         <div class="descr">
             <span class="inline">
-                <img src="assets/ico_epingle.png" alt="idk">
-                Nous sommes parmi les grandes ecoles
+                <img src="assets/ico_epingle.png" id="pin" alt="idk">
+                <h3>Nous sommes parmi les grandes ecoles</h3>
             </span>
             <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis massa. Nulla facilisi. Cras id arcu lorem, et semper purus, Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis vel enim mi, in lobortis sem. Vestibulum luctus elit eu libero ultrices id fermentum sem sagittis. Nulla imperdiet mauris sed sapien dignissim id aliquam est aliquam. Maecenas non odio ipsum, a elementum nisi. Mauris non erat eu erat placerat convallis. Mauris in pretium urna. Cras laoreet molestie odio, consequat consequat velit commodo eu. Integer vitae lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus lorem.</p>
             <p class="lorem">Vivamus sed libero nec mauris pulvinar facilisis ut non sem. Quisque mollis ullamcorper diam vel faucibus.Vestibulum sollicitudin facilisis feugiat. Nulla euismod sodales hendrerit. Donec quis orci arcu. Vivamus fermentum magna a erat ullamcorper dignissim pretium nunc aliquam. Aenean pulvinar condimentum enim a dignissim. Vivamus sit amet lectus at ante adipiscing adipiscing eget vitae felis. In at fringilla est. Cras id velit ut magna rutrum commodo. Etiam ut scelerisque purus. Duis risus elit, venenatis vel rutrum in, imperdiet in quam. Sed vestibulum, libero ut bibendum consectetur, eros ipsum ultrices nisi, in rutrum diam augue non tortor. Fusce nec massa et risus dapibus aliquam vitae nec diam.</p>
             <p class="lorem">Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam quis porttitor. Praesent vitae dignissim magna. Pellentesque quis sem purus, vel elementum mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas consectetur euismod urna. In hac habitasse platea dictumst. Quisque tincidunt porttitor vestibulum. Ut laculis, lacus at molestie lacinia, ipsum mi adipiscing ligula, vel mollis sem risus eu lectus. Nunc elit quam, rutrum ut dignissim sit amet, egestas at sem.</p>
         </div>
         <div class="about">
-            <h2 id="about">A propos de nous</h2>
-            <img src="assets/campus3.jpg" alt="le RU pas le campus">
+            <h3 id="about">A propos de nous</h3>
+            <img src="assets/campus3.jpg" id="campus" alt="le RU pas le campus">
             <p class="present">L'ENSIBS est une École de formation d'ingénieurs habilitée par la Commission des Titres d'Ingénieur (CTI) et créée par décret ministériel en date du 4 mai 2007.</p>
             <p class="present">L'École est dirigée par un Directeur, assisté par un Directeur des études pour toutes les questions relatives à l'organisation et au contenu des enseignements.</p>
-            <span class="inline">
+            <span id="icons" class="inline">
                 <img class="icon" src="assets/facebook.png" alt="">
                 <img class="icon" src="assets/twitter.png" alt="">
                 <img class="icon" src="assets/vimeo.png" alt="">
@@ -54,37 +59,40 @@
                 
             </span>
         </div>
-        <hr>
-    <footer class="footer-contenu">
-           <span class="">
-                <h3>Agenda</h3>
-                <p id="event">11/05-Atelier vélo - Développement durable <br> Dans le cadre du challenge Tout à Vélo</p>
-           </span>
-           <span class="photos">
-                <h3>Photos</h3>
-                <img src="assets/photo1.jpg" alt="" class="photo">
-                <img src="assets/photo2.jpg" alt="" class="photo">
-                <img src="assets/photo3.jpg" alt="" class="photo">
-                <img src="assets/photo4.jpg" alt="" class="photo">
-           </span>
-           <span>
-                <h3>Nos partenaires</h3>
-                <span class="partners">
+    </span>
+    
+    <hr>
+    
+    <footer>
+        <span class="">
+            <h3>Agenda</h3>
+            <p id="event">11/05-Atelier vélo - Développement durable <br> Dans le cadre du challenge Tout à Vélo</p>
+        </span>
+        <span class="photos">
+            <h3>Photos</h3>
+            <img src="assets/photo1.jpg" alt="" class="photo">
+            <img src="assets/photo2.jpg" alt="" class="photo">
+            <img src="assets/photo3.jpg" alt="" class="photo">
+            <img src="assets/photo4.jpg" alt="" class="photo">
+        </span>
+        <span>
+            <h3>Nos partenaires</h3>
+            <span class="partners">
                 <ul class="">
-                    <li><a href="">Entsa Bretagne</a></li>
-                    <li><a href="">ESEO Angers</a></li>
-                    <li><a href="">ECN</a></li>
-                    <li><a href="">ECP</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">Entsa Bretagne</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">ESEO Angers</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">ECN</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">ECP</a></li>
                 </ul>
                 <ul class="">
-                    <li><a href="">ENIB</a></li>
-                    <li><a href="">SUPELEC</a></li>
-                    <li><a href="">AIX Marseille</a></li>
-                    <li><a href="">ECL</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">ENIB</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">SUPELEC</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">AIX Marseille</a></li>
+                    <li><a href="https://www.youtube.com/watch?v=lYBUbBu4W08" target="_blank">ECL</a></li>
                 </ul>
             </span>
-           </span>
-           
+        </span>
     </footer>
+
 </body>
 </html>
