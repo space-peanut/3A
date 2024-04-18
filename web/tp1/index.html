@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link href="https://www-ensibs.univ-ubs.fr/kernel/resources/img/runtime_favico.gif" type="image/gif" rel="icon">
+    <title>TP HTML/CSS Maxime Soulié</title>
 </head>
 <body>
     <header>
@@ -15,16 +16,18 @@
         <nav class="inline shadowed">
             <p id="nav-left">carnet de mission</p>
             <ul class="navbar">
-                <li class="navbar-item"><a>Accueil</a></li>
-                <li class="navbar-item"><a>Blog</a></li>
-                <li class="navbar-item"><a>CV</a></li>
-                <li class="navbar-item"><a>Contact</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Accueil</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Blog</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">CV</a></li>
+                <li class="navbar-item"><a href="https://www.youtube.com/watch?v=RtTYQuO1j6w">Contact</a></li>
             </ul>
         </nav>
     </header>
     <div id="article">
-        <h3 id="">Recrutement 2022 - 2023 ...</h3>
-        <button class="article-right">Voir l'article</button>
+        <div id="whitebg">
+            <h4 id="article-title">Recrutement 2022 - 2023 ...</h4>
+            <button class="article-right">Voir l'article</button>
+        </div>
     </div>
     <hr>
     <span class="main-body">
@@ -52,59 +55,36 @@
             </span>
         </div>
         <hr>
-    <footer>
-        <table>
-            <th>
-                <tr>
-                    <td>Agenda</td>
-                    <td>Photos</td>
-                    <td>Nos partenaires</td>
-                </tr>
-            </th>
-            <tr>
-                <td>
-                    <p>11/05 - Atelier velo - Developpement durable dans </p>
-                    <p>Dans le cadre du Tout a Velo</p>
-                </td>
-                <td>
-                    <img src="assets/photo1.jpg" alt="" class="photo">
-                    <img src="assets/photo2.jpg" alt="" class="photo">
-                    <img src="assets/photo3.jpg" alt="" class="photo">
-                    <img src="assets/photo4.jpg" alt="" class="photo">
-                </td>
-                <td>
-                    <ul class="partners">
-                        <li>
-                            <a href="">Entsa Bretagne</a>
-                        </li>
-                        <li>
-                            <a href="">ESEO Angers</a>
-                        </li>
-                        <li>
-                            <a href="">ECN</a>
-                        </li>
-                        <li>
-                            <a href="">ECP</a>
-                        </li>
-                    </ul>
-                    <ul class="partners">
-                        <li>
-                            <a href="">ENIB</a>
-                        </li>
-                        <li>
-                            <a href="">SUPELEC</a>
-                        </li>
-                        <li>
-                            <a href="">AIX Marseille</a>
-                        </li>
-                        <li>
-                            <a href="">ECL</a>
-                        </li>
-                    </ul>
-                </td>
-            </tr>
-
-        </table>
+    <footer class="footer-contenu">
+           <span class="">
+                <h3>Agenda</h3>
+                <p id="event">11/05-Atelier vélo - Développement durable <br> Dans le cadre du challenge Tout à Vélo</p>
+           </span>
+           <span class="photos">
+                <h3>Photos</h3>
+                <img src="assets/photo1.jpg" alt="" class="photo">
+                <img src="assets/photo2.jpg" alt="" class="photo">
+                <img src="assets/photo3.jpg" alt="" class="photo">
+                <img src="assets/photo4.jpg" alt="" class="photo">
+           </span>
+           <span>
+                <h3>Nos partenaires</h3>
+                <span class="partners">
+                <ul class="">
+                    <li><a href="">Entsa Bretagne</a></li>
+                    <li><a href="">ESEO Angers</a></li>
+                    <li><a href="">ECN</a></li>
+                    <li><a href="">ECP</a></li>
+                </ul>
+                <ul class="">
+                    <li><a href="">ENIB</a></li>
+                    <li><a href="">SUPELEC</a></li>
+                    <li><a href="">AIX Marseille</a></li>
+                    <li><a href="">ECL</a></li>
+                </ul>
+            </span>
+           </span>
+           
     </footer>
 </body>
 </html>
