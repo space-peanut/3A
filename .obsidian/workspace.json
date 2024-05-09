@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "assembly/tp/article.md",
+                "file": "structs/td3.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "assembly/tp/article.md",
+                "file": "structs/td3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "assembly/tp/article.md",
+                "file": "structs/td3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "assembly/tp/article.md"
+                "file": "structs/td3.md"
               }
             }
           }
@@ -149,6 +149,7 @@
   "active": "8ad2184dc9d39838",
   "lastOpenFiles": [
     "assembly/tp/article.md",
+    "structs/td3.md",
     "UselessMangetesmortsLanguage/2ndprojetdemerde/Description cas d'utilisations Maxime Soulié.md",
     "UselessMangetesmortsLanguage/2ndprojetdemerde/diagrammes Maxime Soulié.mdj",
     "UselessMangetesmortsLanguage/2ndprojetdemerde/Description cas d'utilisations Maxime Soulié.pdf",
