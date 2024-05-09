@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(45deg, purple, black);
+  min-height: 100vh;
+  min-width: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+
+
