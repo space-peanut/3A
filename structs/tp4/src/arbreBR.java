@@ -71,6 +71,12 @@ public class arbreBR {
 	}
 	
 	static arbre supprimer(int x, arbre a) {
+		if (a == null) {
+			return a;
+		}
+		if (a.getValeur() == x) {
+			return supprimerRacine(a);
+		}
 		arbre b = a;
 		while (b.getValeur() != x) {
 			if (x < b.getValeur()) {
@@ -79,68 +85,39 @@ public class arbreBR {
 				b = b.getFilsDroit();
 			}			
 		}
-		
-		//si  feuille
+		//feuille
 		if (b.getFilsGauche() == null && b.getFilsDroit() == null) {
 			b = null;
 			return a;
-		}
-		
-		//si 1 fils
-		if (b.getFilsGauche() == null && b.getFilsDroit() != null) {
+		} 
+
+		//1 fils
+		if (b.getFilsDroit()!=null && b.getFilsGauche()==null) {
 			b = b.getFilsDroit();
-			return a;
+			return a;			
 		}
-		if (b.getFilsGauche() != null && b.getFilsDroit() == null) {
+		if (b.getFilsGauche()!=null && b.getFilsDroit()==null) {
 			b = b.getFilsGauche();
-			return a;
+			return a;			
 		}
-		
-		//si 2 fils
-		arbre c = b.getFilsDroit().getFilsGauche();
-		arbre d=c;
-		while (c.getFilsGauche() != null) {
-			d = c;
-			c = c.getFilsGauche();
-		}
-		d.setFilsGauche(c.getFilsDroit());
-		b.getFilsDroit().setFilsGauche(d);
-		b=c;
+
+		//2 fils
+		b=supprimerRacine(b);
 		return a;
 	}
 	
 	static arbre supprimerRacine(arbre a) {
-		//si feuille
-		if(a.getFilsGauche()== null && a.getFilsDroit()==null){
-			a = null;
-			return a;
-		}
-		
-		//si 1 fils
-		if(a.getFilsGauche()== null && a.getFilsDroit()!=null){
-			a=a.getFilsDroit();
-			return a;
-		}
-		if( a.getFilsGauche()!= null && a.getFilsDroit()==null){
-			a=a.getFilsGauche();
-			return a;
-		}
-		
-		//Si 2 fils
-		arbre b = a.getFilsDroit();
-		while (b.getFilsGauche() != null) {
-			b = b.getFilsGauche();
-		}
-		
-		return a;
+		arbre d = a.getFilsDroit();
+		dernierDescendant(d).setFilsGauche(a.getFilsGauche());
+		return d;
 	}
 	
 	static arbre dernierDescendant(arbre a) {
 		if (a.getFilsGauche() == null) {
 			return a;
-		} else {
-			return dernierDescendant(a.getFilsGauche());
 		}
+		return dernierDescendant(a.getFilsGauche());
+
 	}
 	
 	public static void main(String[] args) {
@@ -166,12 +143,16 @@ public class arbreBR {
 		System.out.print("Parcours en largeur: ");
 		parcoursEnLargeur(a);
 		System.out.println();
+
+		arbre a2=a;
+		System.out.println("Suppression racine");
+		System.out.println(supprimerRacine(a2));
 		
 		System.out.println("Suppression de 11");
 		a=supprimer(11, a);
 		System.out.println(a);
 		
-		System.out.println("Suppression de 3");
+		// System.out.println("Suppression de 3");
 		
 		// System.out.print(supprimer(11,a));
 	}
