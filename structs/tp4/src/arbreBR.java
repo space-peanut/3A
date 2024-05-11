@@ -2,7 +2,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class arbreBR {
-
+	
 	public static arbre inserer(int v, arbre a) {
 		if (a == null) {
 			return new arbre(v, null, null);
@@ -12,13 +12,13 @@ public class arbreBR {
 			}else if (v == a.getValeur()) {
 				System.out.println("La valeur " + v + " est déjà présente dans l'arbre");
 			}
-			 else {
+			else {
 				a.setFilsDroit(inserer(v, a.getFilsDroit()));
 			}
 			return a;
 		}
 	}
-
+	
 	static void parcoursPrefixe(arbre a) {
 		
 		System.out.print("("+a.getValeur()+" ");
@@ -30,7 +30,7 @@ public class arbreBR {
 		}
 		System.out.print(")");
 	}
-
+	
 	static void parcoursInfixe(arbre a) {
 		System.err.print("(");
 		if (a.getFilsGauche() != null) {
@@ -42,7 +42,7 @@ public class arbreBR {
 		}
 		System.out.print(")");
 	}
-
+	
 	static void parcoursPostfixe(arbre a) {
 		System.out.print("(");
 		if (a.getFilsGauche() != null) {
@@ -53,7 +53,7 @@ public class arbreBR {
 		}
 		System.out.print(a.getValeur()+") ");
 	}
-
+	
 	static void parcoursEnLargeur(arbre a) {
 		Queue<arbre> q = new LinkedList<arbre>();
 		q.add(a);
@@ -69,75 +69,111 @@ public class arbreBR {
 		}
 		
 	}
-
+	
 	static arbre supprimer(int x, arbre a) {
-		if(a.getValeur()==x && a.getFilsGauche()== null && a.getFilsDroit()==null){
-            a = null;
-            return a;
-        }
-
-        //si y'a un fils
-        if(a.getValeur()==x && a.getFilsGauche()== null && a.getFilsDroit()!=null){
-            a.setValeur(a.getFilsGauche().getValeur());
-            return a;
-        }
-        if(a.getValeur()==x && a.getFilsGauche()!= null && a.getFilsDroit()==null){
-            a.setValeur(a.getFilsDroit().getValeur());
-            return a;
-        }
-
-        //Si y'a deux fils
-
-
-        // Parcours du sous-arbre gauche
-        supprimer(x,a.getFilsGauche());
-
-        // Parcours du sous-arbre droit
-        supprimer(x,a.getFilsDroit());
-        return a;
+		arbre b = a;
+		while (b.getValeur() != x) {
+			if (x < b.getValeur()) {
+				b = b.getFilsGauche();
+			} else {
+				b = b.getFilsDroit();
+			}			
+		}
+		
+		//si  feuille
+		if (b.getFilsGauche() == null && b.getFilsDroit() == null) {
+			b = null;
+			return a;
+		}
+		
+		//si 1 fils
+		if (b.getFilsGauche() == null && b.getFilsDroit() != null) {
+			b = b.getFilsDroit();
+			return a;
+		}
+		if (b.getFilsGauche() != null && b.getFilsDroit() == null) {
+			b = b.getFilsGauche();
+			return a;
+		}
+		
+		//si 2 fils
+		arbre c = b.getFilsDroit().getFilsGauche();
+		arbre d=c;
+		while (c.getFilsGauche() != null) {
+			d = c;
+			c = c.getFilsGauche();
+		}
+		d.setFilsGauche(c.getFilsDroit());
+		b.getFilsDroit().setFilsGauche(d);
+		b=c;
+		return a;
 	}
-
+	
 	static arbre supprimerRacine(arbre a) {
-		/* A REMPLIR */
-		return null;
+		//si feuille
+		if(a.getFilsGauche()== null && a.getFilsDroit()==null){
+			a = null;
+			return a;
+		}
+		
+		//si 1 fils
+		if(a.getFilsGauche()== null && a.getFilsDroit()!=null){
+			a=a.getFilsDroit();
+			return a;
+		}
+		if( a.getFilsGauche()!= null && a.getFilsDroit()==null){
+			a=a.getFilsGauche();
+			return a;
+		}
+		
+		//Si 2 fils
+		arbre b = a.getFilsDroit();
+		while (b.getFilsGauche() != null) {
+			b = b.getFilsGauche();
+		}
+		
+		return a;
 	}
-
+	
 	static arbre dernierDescendant(arbre a) {
-		/* A REMPLIR */
-		return null;
+		if (a.getFilsGauche() == null) {
+			return a;
+		} else {
+			return dernierDescendant(a.getFilsGauche());
+		}
 	}
-
+	
 	public static void main(String[] args) {
 		arbre a = null;
-
+		
 		for (int i = 0; i < args.length; i++) {
 			a = inserer(Integer.parseInt(args[i]), a);
 		}
 		System.out.print(a);
-
+		
 		System.out.print("Parcours prefixe : ");
 		parcoursPrefixe(a);
 		System.out.println();
-
+		
 		System.out.print("Parcours infixe :  ");
 		parcoursInfixe(a);
 		System.out.println();
-
+		
 		System.out.print("Parcours postfixe :  ");
 		parcoursPostfixe(a);
 		System.out.println();
-
+		
 		System.out.print("Parcours en largeur: ");
 		parcoursEnLargeur(a);
 		System.out.println();
-
-		System.out.println("Suppression de 8");
-		supprimer(8, a);
+		
+		System.out.println("Suppression de 11");
+		a=supprimer(11, a);
 		System.out.println(a);
-
+		
 		System.out.println("Suppression de 3");
 		
 		// System.out.print(supprimer(11,a));
 	}
-
+	
 }
