@@ -595,6 +595,7 @@ organisations
 obtenir
 oblivious
 octet
+outil
 Length
 Lll
 Ly
@@ -1523,6 +1524,9 @@ supprime
 signale
 secondaire
 suivante
+script
+suivant
+saut
 BC
 BR
 BitsPerComponent
@@ -2442,6 +2446,8 @@ changer
 cde
 compilons
 codes
+chaines
+chiffres
 SS
 Subtype
 SMask
@@ -4068,6 +4074,10 @@ desir
 diagramme
 deconnecte
 doit
+debugging
+debugger
+define
+declarer
 endstream
 endobj
 ew
@@ -4406,6 +4416,8 @@ edite
 enregistre
 envoy
 envoie
+exe
+encore
 Type
 TML
 Tc
@@ -6507,6 +6519,8 @@ Alcest
 Alestorm
 Adieu
 Acteurs
+Affin
+ASCII
 aZ
 aX
 am
@@ -10962,6 +10976,7 @@ beast
 but
 bons
 bits
+byte
 vjV
 vN
 vu
@@ -11871,6 +11886,10 @@ informe
 informer
 interrupt
 infixe
+initialisation
+initialisees
+ici
+indique
 Oz
 OJ
 OG
@@ -13712,6 +13731,7 @@ gevaudan
 gerer
 gere
 grace
+genere
 ql
 qK
 qr
