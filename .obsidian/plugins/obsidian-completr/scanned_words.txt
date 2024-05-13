@@ -1522,6 +1522,7 @@ souhaite
 supprime
 signale
 secondaire
+suivante
 BC
 BR
 BitsPerComponent
@@ -2439,6 +2440,8 @@ call
 contrairement
 changer
 cde
+compilons
+codes
 SS
 Subtype
 SMask
@@ -3384,6 +3387,7 @@ postfixe
 produits
 paye
 prise
+portant
 fg
 fm
 fvr
@@ -3716,6 +3720,7 @@ fermee
 facture
 fonctionne
 fast
+ficxhier
 dg
 dp
 dj
@@ -5884,6 +5889,8 @@ Cathedral
 Cours
 CME
 CPL
+Compilation
+Comme
 DeviceRGB
 DV
 Dk
@@ -6841,6 +6848,8 @@ accuse
 alternatif
 achete
 accuser
+assembleur
+architecture
 nO
 nr
 nm
@@ -7143,6 +7152,7 @@ number
 nominal
 necessite
 notifie
+nous
 rP
 rU
 rPn
@@ -8077,6 +8087,7 @@ wdK
 wTV
 watashi
 walk
+wine
 JB
 Jbr
 JW
@@ -10642,6 +10653,7 @@ human
 haut
 hollywood
 home
+helloworld
 bE
 bY
 bi
@@ -12410,6 +12422,7 @@ thesis
 takoyaki
 transmet
 transition
+travaillent
 kE
 ka
 kF
@@ -13698,6 +13711,7 @@ guitariste
 gevaudan
 gerer
 gere
+grace
 ql
 qK
 qr
@@ -14508,6 +14522,8 @@ uragirinoyuuyake
 utilisaeur
 userland
 utilise
+unix
+utilisons
 mmK
 mK
 mJ
@@ -14866,6 +14882,8 @@ modification
 modifiee
 model
 msr
+microsoft
+membres
 GK
 GO
 GH
