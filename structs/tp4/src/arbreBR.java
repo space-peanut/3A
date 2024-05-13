@@ -78,32 +78,27 @@ public class arbreBR {
 			return supprimerRacine(a);
 		}
 		arbre b = a;
-		while (b.getValeur() != x) {
-			if (x < b.getValeur()) {
-				b = b.getFilsGauche();
+		while (true) {
+			if(x>b.getValeur()){
+				if(b.getFilsDroit()==null){
+					return a;
+				}
+				if(x==b.getFilsDroit().getValeur()){
+					b.setFilsDroit(supprimerRacine(b.getFilsDroit()));
+					return a;
+				}
+				b=b.getFilsDroit();
 			} else {
-				b = b.getFilsDroit();
-			}			
+				if(b.getFilsGauche()==null){
+					return a;
+				}
+				if(x==b.getFilsGauche().getValeur()){
+					b.setFilsGauche(supprimerRacine(b.getFilsGauche()));
+					return a;
+				}
+				b=b.getFilsGauche();
+			}
 		}
-		//feuille
-		if (b.getFilsGauche() == null && b.getFilsDroit() == null) {
-			b = null;
-			return a;
-		} 
-
-		//1 fils
-		if (b.getFilsDroit()!=null && b.getFilsGauche()==null) {
-			b = b.getFilsDroit();
-			return a;			
-		}
-		if (b.getFilsGauche()!=null && b.getFilsDroit()==null) {
-			b = b.getFilsGauche();
-			return a;			
-		}
-
-		//2 fils
-		b=supprimerRacine(b);
-		return a;
 	}
 	
 	static arbre supprimerRacine(arbre a) {
@@ -117,7 +112,7 @@ public class arbreBR {
 			return a;
 		}
 		return dernierDescendant(a.getFilsGauche());
-
+		
 	}
 	
 	public static void main(String[] args) {
@@ -143,7 +138,7 @@ public class arbreBR {
 		System.out.print("Parcours en largeur: ");
 		parcoursEnLargeur(a);
 		System.out.println();
-
+		
 		arbre a2=a;
 		System.out.println("Suppression racine");
 		System.out.println(supprimerRacine(a2));
