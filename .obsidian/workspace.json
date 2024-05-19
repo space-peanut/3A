@@ -13,31 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "assembly/tp/Rapportexercices-Legourrierec-delestourbeillon-soulie.md",
-                "mode": "preview",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f5f729e079bdb0d3",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "bilan semestre.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bf21f95d1ce9e5a7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML et LLM.md",
+                "file": "web/rapport Maxime Soulie.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML et LLM.md",
+                "file": "web/rapport Maxime Soulie.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -173,10 +149,22 @@
   },
   "active": "bf21f95d1ce9e5a7",
   "lastOpenFiles": [
-    "bilan semestre.md",
-    "ML et LLM.md",
+    "web/rapport Maxime Soulie.pdf",
+    "assembly/rapport Maxime Soulie.pdf",
+    "web/README.md",
+    "web/rapport Maxime Soulie.md",
+    "structs/tp5/src/Voisin.java",
+    "structs/tp5/src/Sommet.java",
+    "structs/tp5/src/Main.java",
+    "structs/tp5/src/Graph.java",
+    "structs/tp5/bin/Voisin.class",
+    "structs/tp5/bin/Sommet.class",
+    "structs/tp5/bin/Main.class",
+    "structs/tp5/bin/Graph.class",
+    "structs/tp5/src",
+    "structs/tp5/README.md",
+    "Pasted image 20240516003836.png",
     "assembly/tp/Rapportexercices-Legourrierec-delestourbeillon-soulie.md",
-    "assembly/Rapportexercices-Legourrierec-delestourbeillon-soulie.pdf",
     "protoCrypto/td2/td2.md",
     "Java/tpparking/README.md",
     "assembly/tp/rapports.md",
@@ -187,17 +175,8 @@
     "Pasted image 20240514161212.png",
     "Pasted image 20240514161138.png",
     "Pasted image 20240514152755.png",
-    "assembly/rapports.pdf",
     "Pasted image 20240513224544.png",
     "structs/td3.md",
-    "UselessMangetesmortsLanguage/2ndprojetdemerde/diagrammes Maxime Soulié.mdj",
-    "UselessMangetesmortsLanguage/2ndprojetdemerde/Description cas d'utilisations Maxime Soulié.pdf",
-    "logique_math/tp2/o/exercice5.out",
-    "logique_math/tp2/o/exercice4.out",
-    "logique_math/tp2/o/exercice2-4.out",
-    "logique_math/tp2/o/exercice2-3.out",
-    "logique_math/tp2/o/exercice2-2.out",
-    "logique_math/tp2/o/exercice2-1.out",
     "listeReco.md",
     "DGSI.md"
   ]
